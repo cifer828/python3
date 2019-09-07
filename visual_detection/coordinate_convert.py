@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
 
-img_coord_file = ''   # 坐标文件名
-convert_click = 0   # 坐标转换时点击标定点次数
+img_coord_file = ''  # 坐标文件名
+convert_click = 0  # 坐标转换时点击标定点次数
+
+
 # M = [] # 坐标转换矩阵
 
 def read_coord(filename):
@@ -11,10 +13,11 @@ def read_coord(filename):
     """
     with open(filename, 'r') as f:
         real_points = f.read()
-    rps= [int(p) for p in real_points.split()]
+    rps = [int(p) for p in real_points.split()]
     rps = list(zip(rps[::2], rps[1::2]))
     real_points = np.float32(rps)
     return real_points
+
 
 def mouseclick(event, x, y, s, p):
     """
@@ -27,6 +30,7 @@ def mouseclick(event, x, y, s, p):
         with open(img_coord_file, 'a') as f:
             f.write(str(x) + '\t' + str(y) + '\n')
         convert_click += 1
+
 
 def get_image_points(one_frame, filename):
     """
@@ -44,7 +48,8 @@ def get_image_points(one_frame, filename):
     cv2.imshow('input', one_frame)
     cv2.waitKey(0)
 
-def get_convert_mat(filename, param = 0):
+
+def get_convert_mat(filename, param=0):
     """
     filename: 视频文件
     param: 0 - 使用文件中点标定
@@ -54,7 +59,7 @@ def get_convert_mat(filename, param = 0):
     global img_coord_file
     sub_filename = filename.split('/')[-1][: -4]
     img_coord_file = 'data/' + sub_filename + '/' + sub_filename + '_img_coord.txt'
-    real_coord_file = 'data/'+ sub_filename + '/' + sub_filename + '_real_coord.txt'
+    real_coord_file = 'data/' + sub_filename + '/' + sub_filename + '_real_coord.txt'
     if param == 1:
         capture = cv2.VideoCapture(filename)
         ret, frame = capture.read()
@@ -63,6 +68,7 @@ def get_convert_mat(filename, param = 0):
     real_points = read_coord(real_coord_file)
     M = cv2.getPerspectiveTransform(img_points, real_points)
     return M
+
 
 def coord_convert(img_coord, M):
     """
@@ -76,6 +82,7 @@ def coord_convert(img_coord, M):
     new_point = new_point * 1.0 / new_point[2]
     return [int(new_point[0]), int(new_point[1])]
 
+
 def convert_test():
     filename = "D:/文档/研究生/研二/交通行为参数/数据/交叉口视频/1111_4.MOV"
     M = get_convert_mat(filename, 0)
@@ -84,7 +91,8 @@ def convert_test():
     # cv2.imshow('output', dst)
     # cv2.waitKey(0)
 
+
 if __name__ == "__main__":
     # convert_test()
-    get_image_points(cv2.imread('D:/jl.png'), filename = 'image.txt')
+    get_image_points(cv2.imread('~/jl.png'), filename='image.txt')
     # get_image_points(cv2.imread('D:/data/0328_1/0328_1_bg.jpg'), filename = 'image.txt')
