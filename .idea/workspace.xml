@@ -49,59 +49,6 @@
       <node key="907244d1-95be-4bc7-955d-9c768820b27c" />
     </checked>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-666275596">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="15" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="csv" value="2" />
-          <entry key="py" value="53" />
-          <entry key="pyw" value="2" />
-          <entry key="sql" value="9" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSV" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="55" />
-          <entry key="SQL" value="1" />
-          <entry key="Scratch" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Django Console" value="279" />
-          <entry key="py" value="2017" />
-          <entry key="pyw" value="5" />
-          <entry key="sql" value="260" />
-          <entry key="txt" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="2300" />
-          <entry key="SQL" value="9" />
-          <entry key="Scratch" value="252" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -179,6 +126,9 @@
       <find>TBIZNOREG</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -215,12 +165,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="79" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
-  </component>
+  <component name="ProjectId" id="1QWnvV4xv791FHJfO60njS39sFE" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -267,7 +212,7 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../haier/haier_py2/pic_compare/get_hash.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="PyConsoleOptionsProvider">
