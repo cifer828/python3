@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../PycharmProjects/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../PycharmProjects/.idea/PycharmProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python2/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../python2/.idea/PycharmProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Python3Projects.iml" filepath="$PROJECT_DIR$/.idea/Python3Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/Scientific/test/.idea/test.iml" filepath="$PROJECT_DIR$/Scientific/test/.idea/test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../wotou/wotoudjango/.idea/wotoudjango.iml" filepath="$PROJECT_DIR$/../../wotou/wotoudjango/.idea/wotoudjango.iml" />
+      <module fileurl="file://$USER_HOME$/wotou/wotoudjango/.idea/wotoudjango.iml" filepath="$USER_HOME$/wotou/wotoudjango/.idea/wotoudjango.iml" />
     </modules>
   </component>
 </project>

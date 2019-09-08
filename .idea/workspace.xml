@@ -2,11 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDCatItem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDHotSale.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDHotSearch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemComment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemComment2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Air.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Dish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Dish.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Gas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Gas.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Hood.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Hood.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Ref.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Ref.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Tv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Wash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemDetail_Wash.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/JDItemScore.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDCatItemCrawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDHotInfoCrawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemCommentCrawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemCommentCrawl2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Air.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Dish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Dish.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Gas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Gas.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Hood.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Hood.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Ref.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Ref.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Tv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Wash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemDetailCrawl_Wash.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/JDItemScoreCrawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/htmlDownloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/crawler/htmlParser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/db/IsqlHelper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/db/dbLoader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/db/sqlHelper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/util/myProxies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/JDCrawler/util/myThread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/hide_phone_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/hide_phone_number.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/jd_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/CONFIGURE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/DbLoader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/FtpLoad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/api_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/app.pyw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/get_hash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/no_image_in_ftp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/pic_compare/repeated_download.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/project_code/EDOC下载图片逻辑.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/project_code/GEMS涉及的单据查询SQL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/project_code/search_group_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/project_code/search_group_image.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/project_code/search_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/project_code/search_image.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/ps_check/UnRAR.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/ps_check/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/ps_check/failed_image.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/ps_check/pscheck.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python2/haier_py2/ps_check/pscheck.py.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/.ipynb_checkpoints/cluster-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/cluster.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/cluster_oracle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/空调品类整理.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/空调品类整理_结果.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/空调品类整理_聚类结果.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/air_condition_cluster/空调品类整理_距离矩阵.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/profit_conflict/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/profit_conflict/get_ip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/profit_conflict/phone_39001_43000.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/profit_conflict/phone_39001_43000_利益冲突.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/profit_conflict/phone_45001_end.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/profit_conflict/qicahcha_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/Aoma_city.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/Cangxiaoer_city.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/Kfwy_city.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/abuyun_proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/aoma_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/cangxiaoer_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/clean_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/geocode.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/kfwy_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/main_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haier_py3/warehouse_crawler/warehouse_crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/piece_wise_convert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/video_tracking_ma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python2/.idea/PycharmProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python2/.idea/PycharmProjects.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Python3Projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python3Projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_detection/coordinate_convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/visual_detection/coordinate_convert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_detection/real.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_detection/route_analyze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_detection/route_analyze_lk.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,12 +185,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QWnvV4xv791FHJfO60njS39sFE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python2" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -96,7 +204,13 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visual_detection" />
+      <recent name="$PROJECT_DIR$/visual_detection/tracker" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../python2" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\zhqch\Documents\code\PycharmProjects\haier\pic_compare" />
     </key>
   </component>
@@ -129,28 +243,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="api_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PycharmProjects/haier/pic_compare" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PycharmProjects/haier/pic_compare/api_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -269,7 +361,6 @@
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.api_test" />
       <item itemvalue="Python.cluster_oracle" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.app" />
@@ -279,7 +370,6 @@
       <list>
         <item itemvalue="Python.huawei" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.api_test" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.cluster_oracle" />
       </list>
@@ -295,7 +385,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493698035806</updated>
-      <workItem from="1567895454584" duration="625000" />
+      <workItem from="1567895454584" duration="2857000" />
     </task>
     <servers />
   </component>
