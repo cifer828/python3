@@ -239,7 +239,7 @@ def object_track(filename, train_frame=600, skip_frame=0, write=False, save_vide
     bg_subtractor.setVarThreshold(9)
     bg_subtractor.setDetectShadows(True)
     # 初始化窗口, flag=0 可调整大小
-    cv2.namedWindow('new_frame', 0)
+    cv2.namedWindow('new_frame', cv2.WINDOW_NORMAL)
     # cv2.namedWindow('mask', 0)
     # 保存视频 cap.get(): 3-宽，4-高，5-帧率
     out_num = 1
@@ -354,6 +354,6 @@ def frame_cut(filename):
 
 if __name__ == '__main__':
     time1 = time.time()
-    object_track('~/Code/data/jiaoda/jiaoda.avi', train_frame=600, write=True, save_video=True)
+    object_track('/Users/qiuchenzhang/Code/data/jiaoda/jiaoda.avi', train_frame=100, write=True, save_video=True)
     print('time cost:', time.time() - time1, 'seconds')
     # frame_cut('G:/ZQC/data/lvlu_20190117_kuaxianqiao_3_input/lvlu_20190117_kuaxianqiao_3_input.avi')
