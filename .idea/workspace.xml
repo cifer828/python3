@@ -4,6 +4,24 @@
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/visual_detection/gmm_tracking.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/visual_detection/lda/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/all_conflicts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/cluster_result.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/conflict_list.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/doc2topic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/doc2topic.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/feature_list.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/filter_conflicts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/lda_cluster.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/lda_ped.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/model.expElogbeta.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/model.id2word" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/model.state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/perplexity_result.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/topic2word" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/topic2word.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/topic2word.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_detection/lda/zqc_20190402_lvyuan_jiasong_low_manual_conflict.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_detection/video_tracking_ma.py" beforeDir="false" afterPath="$PROJECT_DIR$/visual_detection/video_tracking_ma.py" afterDir="false" />
     </list>
@@ -96,14 +114,15 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/visual_detection" />
-      <recent name="$PROJECT_DIR$/visual_detection/tracker" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../python2" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\zhqch\Documents\code\PycharmProjects\haier\pic_compare" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visual_detection/lda" />
+      <recent name="$PROJECT_DIR$/visual_detection" />
+      <recent name="$PROJECT_DIR$/visual_detection/tracker" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,7 +326,7 @@
       <workItem from="1569460273496" duration="75000" />
       <workItem from="1570852567129" duration="18000" />
       <workItem from="1570999825538" duration="37000" />
-      <workItem from="1573574451524" duration="247000" />
+      <workItem from="1573574451524" duration="716000" />
     </task>
     <servers />
   </component>
