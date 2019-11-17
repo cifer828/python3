@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OA/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OA/akuna_order_markig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OA/input001.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OA/input002.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OA/output001.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OA/output002.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +295,7 @@
       <workItem from="1570852567129" duration="18000" />
       <workItem from="1570999825538" duration="37000" />
       <workItem from="1573574451524" duration="716000" />
-      <workItem from="1573919215258" duration="6831000" />
+      <workItem from="1573919215258" duration="7221000" />
     </task>
     <servers />
   </component>
