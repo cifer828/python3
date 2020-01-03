@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/html_2_assesment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/05-Capstone_Project_One/my_landing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/05-Capstone_Project_One/my_landing_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/05-Capstone_Project_One/my_thankyou.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/My_BS_Project/My_BS_Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/My_BS_Project/My_Signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/My_Part4_Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/project/my_frontend_project.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/project/my_frontend_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OA/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA/TEST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/01-HTML_Level_One/Part4_divs_spans.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/01-HTML_Level_One/Part4_divs_spans.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part5_Forms_Labels.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part5_Forms_Labels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part6_Forms_Selections.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part6_Forms_Selections.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/Part5_master.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/Part5_master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/CSS_Level_Two_Spectrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/CSS_Level_Two_Spectrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part1_Buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part1_Buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part3_Navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part3_Navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part4_Grids.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part4_Grids.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part1_Javascript_Basics.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part1_Javascript_Basics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part3.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part8_Loops_Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part8_Loops_Exercise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part2_Function_Exercises.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part2_Function_Exercises.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part6_Objects_Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part6_Objects_Exercise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part3_Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part3_Events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game_Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game_Project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/10-jQuery/Part1_MyDocument.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/Part1_MyDocument.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/10-jQuery/Part2_Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/Part2_Events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/10-jQuery/Part3_FrontEndProject.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/Part3_FrontEndProject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part10_Simple_Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part10_Simple_Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part6_Exercise_Review.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part6_Exercise_Review.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part9_Functions_Exercises.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part9_Functions_Exercises.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part2_Object_Oriented_Programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part2_Object_Oriented_Programming.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part3_OOP_Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part3_OOP_Project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part5_Decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part5_Decorators.py" afterDir="false" />
-    </list>
+    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,8 +333,16 @@
       <workItem from="1576437810931" duration="219000" />
       <workItem from="1577159288731" duration="2720000" />
       <workItem from="1577299691935" duration="4228000" />
-      <workItem from="1577472667320" duration="44617000" />
+      <workItem from="1577472667320" duration="44858000" />
     </task>
+    <task id="LOCAL-00001" summary="django course">
+      <created>1578018156814</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578018156814</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -406,6 +369,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="django course" />
+    <option name="LAST_COMMIT_MESSAGE" value="django course" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python3$Part10_Simple_Game.coverage" NAME="Part10_Simple_Game Coverage Results" MODIFIED="1577906563647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
