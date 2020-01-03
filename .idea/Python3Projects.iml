@@ -8,6 +8,7 @@
     <orderEntry type="module" module-name="wotoudjango" />
     <orderEntry type="module" module-name="test" />
     <orderEntry type="module" module-name="PycharmProjects" />
+    <orderEntry type="module" module-name="first_project" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="renderExternalDocumentation" value="true" />

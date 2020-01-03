@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../python2/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../python2/.idea/PycharmProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Python3Projects.iml" filepath="$PROJECT_DIR$/.idea/Python3Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/udemy_django/my_projects/first_project/.idea/first_project.iml" filepath="$PROJECT_DIR$/udemy_django/my_projects/first_project/.idea/first_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/Scientific/test/.idea/test.iml" filepath="$PROJECT_DIR$/Scientific/test/.idea/test.iml" />
       <module fileurl="file://$USER_HOME$/wotou/wotoudjango/.idea/wotoudjango.iml" filepath="$USER_HOME$/wotou/wotoudjango/.idea/wotoudjango.iml" />
     </modules>

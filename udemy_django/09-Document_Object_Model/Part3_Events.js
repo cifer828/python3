@@ -11,7 +11,7 @@ headOne.addEventListener('mouseover',function(){
 })
 
 headOne.addEventListener('mouseout',function(){
-  headOne.textContent = "Mouse Not On me."
+  headOne.textContent = "HOVER OVER ME"
   headOne.style.color = 'blue';
 })
 

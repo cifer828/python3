@@ -24,7 +24,7 @@
 // sleepIn(false, true) → true
 
 function sleepIn(weekday, vacation) {
-    //Code Goes Here
+    return !weekday || vacation;
 }
 
 
@@ -42,7 +42,7 @@ function sleepIn(weekday, vacation) {
 // monkeyTrouble(true, false) → false
 
 function monkeyTrouble(aSmile, bSmile) {
-    //Code Goes Here
+    return !(aSmile ^ bSmile);
 }
 
 
@@ -60,6 +60,10 @@ function monkeyTrouble(aSmile, bSmile) {
 
 function stringTimes(str, n) {
     //Code Goes Here
+    var ret = "";
+    for (var i = 0; i < n; i++)
+        ret = ret + str;
+    return ret;
 }
 
 // PROBLEM 4: LUCKY SUM
@@ -77,8 +81,17 @@ function stringTimes(str, n) {
 // luckySum(1, 13, 3) → 1
 
 function luckySum(a, b, c){
-
-  //Code Goes Here
+    var ret = 0;
+    if (a != 13){
+        ret += a;
+        if (b != 13){
+            ret += b;
+            if (c != 13){
+                ret += c;
+            }
+        }
+    }
+    return ret;
 }
 
 // PROBLEM 5:
@@ -96,7 +109,14 @@ function luckySum(a, b, c){
 // caught_speeding(65, true) → 0
 
 function caught_speeding(speed, is_birthday){
-  //Code Goes Here
+    var baseline = 60;
+    if (is_birthday) baseline += 5;
+    if (speed <= baseline)
+        return 0;
+    else if (speed <= baseline + 20)
+        return 1;
+    else
+        return 2;
 }
 
 
@@ -114,5 +134,5 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 2, 10) → true
 
 function makeBricks(small, big, goal){
-  //Code Goes Here
+  return (goal % 5 <= small) && (big * 5 + small >= goal);
 }

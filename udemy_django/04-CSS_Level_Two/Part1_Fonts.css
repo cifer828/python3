@@ -14,7 +14,7 @@ h1{
 
 p{
 
-  font-family: monospace;
+  font-family: 'Ma Shan Zheng', cursive;
 }
 
 body{
@@ -25,7 +25,12 @@ p{
   font-size: 10px;
 }
 
+/* em -> parent text size*/
 #two{
+  font-size: 2.0em;
+}
+
+span{
   font-size: 2.0em;
 }
 

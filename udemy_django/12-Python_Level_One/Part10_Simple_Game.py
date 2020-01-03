@@ -25,11 +25,28 @@
 import random
 digits = list(range(10))
 random.shuffle(digits)
-print(digits[:3])
+ret = digits[:3]
+print(ret)
 
-# Another hint:
-guess = input("What is your guess? ")
-print(guess)
+
+while True:
+    # Another hint:
+    guess = input("What is your guess? ")
+    guess = [int(c) for c in guess]
+    if guess == ret:
+        print("result: match")
+        break
+
+    match = False
+    for i in guess:
+        if i in ret:
+            match = True
+            break
+
+    if match:
+        print("result: close")
+    else:
+        print("result: nope")
 
 # Think about how you will compare the input to the random number, what format
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!

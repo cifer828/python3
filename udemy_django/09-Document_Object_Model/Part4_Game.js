@@ -12,6 +12,7 @@ function clearBoard() {
   }
 
 }
+
 restart.addEventListener('click',clearBoard)
 
 

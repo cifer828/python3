@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="" />
+    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/html_2_assesment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/05-Capstone_Project_One/my_landing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/05-Capstone_Project_One/my_landing_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/05-Capstone_Project_One/my_thankyou.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/My_BS_Project/My_BS_Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/My_BS_Project/My_Signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/My_Part4_Game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/project/my_frontend_project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/project/my_frontend_project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OA/TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/OA/TEST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/01-HTML_Level_One/Part4_divs_spans.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/01-HTML_Level_One/Part4_divs_spans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part5_Forms_Labels.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part5_Forms_Labels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part6_Forms_Selections.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/02-HTML_Level_Two/Part6_Forms_Selections.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/CSS_Level_One_Assessment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/Part5_master.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/03-CSS_Level_One/Part5_master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/CSS_Level_Two_Spectrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/CSS_Level_Two_Spectrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/04-CSS_Level_Two/Part1_Fonts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part1_Buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part1_Buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part3_Navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part3_Navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part4_Grids.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/06-Bootstrap/Part4_Grids.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part1_Javascript_Basics.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part1_Javascript_Basics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part3.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part8_Loops_Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/07-JavaScript_Level_One/Part8_Loops_Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part2_Function_Exercises.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part2_Function_Exercises.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part4_Array_Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part6_Objects_Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/08-Javascript_Level_Two/Part6_Objects_Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part3_Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part3_Events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game_Project.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/09-Document_Object_Model/Part4_Game_Project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/10-jQuery/Part1_MyDocument.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/Part1_MyDocument.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/10-jQuery/Part2_Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/Part2_Events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/10-jQuery/Part3_FrontEndProject.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/10-jQuery/Part3_FrontEndProject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part10_Simple_Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part10_Simple_Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part6_Exercise_Review.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part6_Exercise_Review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part9_Functions_Exercises.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part9_Functions_Exercises.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part2_Object_Oriented_Programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part2_Object_Oriented_Programming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part3_OOP_Project.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part3_OOP_Project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part5_Decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part5_Decorators.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +98,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1QWnvV4xv791FHJfO60njS39sFE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -66,10 +119,11 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/OA" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -81,16 +135,16 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/visual_detection/lda" />
-      <recent name="$PROJECT_DIR$/visual_detection" />
-      <recent name="$PROJECT_DIR$/visual_detection/tracker" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/OA" />
       <recent name="$PROJECT_DIR$/../python2" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\zhqch\Documents\code\PycharmProjects\haier\pic_compare" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visual_detection/lda" />
+      <recent name="$PROJECT_DIR$/visual_detection" />
+      <recent name="$PROJECT_DIR$/visual_detection/tracker" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -105,7 +159,117 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.akuna_order_markig">
+  <component name="RunManager" selected="Django server.first_project">
+    <configuration name="Part10_Simple_Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part10_Simple_Game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Part10_Simple_Game_SOLUTIONS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part10_Simple_Game_SOLUTIONS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Part3_OOP_Project" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_django/13-Python_Level_Two" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/13-Python_Level_Two/Part3_OOP_Project.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Part6_Exercise_Review" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part6_Exercise_Review.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Part9_Functions_Exercises" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/12-Python_Level_One/Part9_Functions_Exercises.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Python3Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,94 +286,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="akuna_order_markig" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python3Projects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OA/akuna_order_markig.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PycharmProjects/haier/pic_compare" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PycharmProjects/haier/pic_compare/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="huawei" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PycharmProjects/demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PycharmProjects/demo/huawei.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scientific/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scientific/test/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -238,43 +314,45 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="video_tracking_ma" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python3Projects" />
+    <configuration name="first_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="first_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visual_detection" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visual_detection/video_tracking_ma.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.huawei" />
-      <item itemvalue="Python.video_tracking_ma" />
-      <item itemvalue="Python.akuna_order_markig" />
+      <item itemvalue="Python.Part6_Exercise_Review" />
+      <item itemvalue="Python.Part9_Functions_Exercises" />
+      <item itemvalue="Python.Part10_Simple_Game" />
+      <item itemvalue="Python.Part10_Simple_Game_SOLUTIONS" />
+      <item itemvalue="Python.Part3_OOP_Project" />
+      <item itemvalue="Django server.first_project" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.akuna_order_markig" />
-        <item itemvalue="Python.video_tracking_ma" />
-        <item itemvalue="Python.huawei" />
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.Part3_OOP_Project" />
+        <item itemvalue="Python.Part10_Simple_Game_SOLUTIONS" />
+        <item itemvalue="Python.Part10_Simple_Game" />
+        <item itemvalue="Python.Part9_Functions_Exercises" />
+        <item itemvalue="Python.Part6_Exercise_Review" />
       </list>
     </recent_temporary>
   </component>
@@ -296,6 +374,11 @@
       <workItem from="1570999825538" duration="37000" />
       <workItem from="1573574451524" duration="716000" />
       <workItem from="1573919215258" duration="7221000" />
+      <workItem from="1574981949351" duration="10000" />
+      <workItem from="1576437810931" duration="219000" />
+      <workItem from="1577159288731" duration="2720000" />
+      <workItem from="1577299691935" duration="4228000" />
+      <workItem from="1577472667320" duration="44617000" />
     </task>
     <servers />
   </component>
@@ -325,7 +408,13 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python3$Part10_Simple_Game.coverage" NAME="Part10_Simple_Game Coverage Results" MODIFIED="1577906563647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
+    <SUITE FILE_PATH="coverage/python3$Part3_OOP_Project.coverage" NAME="Part3_OOP_Project Coverage Results" MODIFIED="1577921608703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/13-Python_Level_Two" />
+    <SUITE FILE_PATH="coverage/python3$Part9_Functions_Exercises.coverage" NAME="Part9_Functions_Exercises Coverage Results" MODIFIED="1577906077550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
+    <SUITE FILE_PATH="coverage/python3$Part10_Simple_Game_SOLUTIONS.coverage" NAME="Part10_Simple_Game_SOLUTIONS Coverage Results" MODIFIED="1577906743198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
     <SUITE FILE_PATH="coverage/python3$video_tracking_ma.coverage" NAME="video_tracking_ma Coverage Results" MODIFIED="1573574596643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/visual_detection" />
-    <SUITE FILE_PATH="coverage/python3$akuna_order_markig.coverage" NAME="akuna_order_markig Coverage Results" MODIFIED="1573952107169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
+    <SUITE FILE_PATH="coverage/python3$akuna_order_markig.coverage" NAME="akuna_order_markig Coverage Results" MODIFIED="1576437847576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
+    <SUITE FILE_PATH="coverage/python3$TEST.coverage" NAME="TEST Coverage Results" MODIFIED="1576437859612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
+    <SUITE FILE_PATH="coverage/python3$Part6_Exercise_Review.coverage" NAME="Part6_Exercise_Review Coverage Results" MODIFIED="1577905947988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
   </component>
 </project>
