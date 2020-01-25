@@ -7,5 +7,10 @@
       <user-name>DADEV</user-name>
       <schema-mapping />
     </data-source>
+    <data-source name="db" uuid="db4226c6-8029-4f68-88cf-b0e8727e7bc2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-required>false</auth-required>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

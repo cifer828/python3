@@ -10,5 +10,14 @@
         <property name="v$session.program" value="DataGrip" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="db" uuid="db4226c6-8029-4f68-88cf-b0e8727e7bc2">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/udemy_django/my_projects/first_project/db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
