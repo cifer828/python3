@@ -2,69 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS/launch_instance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/.idea/ProTwo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/migrations/0002_userprofileinfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static/css/mycss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static/img/rua_in_app.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/templatetags/my_extras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/migrations/0002_auto_20200108_0425.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/static/css/user.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/populate_first_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/static/img/rua.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/first_app/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/first_app/django-basics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/first_app/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/first_app/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/first_app/other.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/first_app/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/homework/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/templates/homework/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python3Projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python3Projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/populate_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/ProTwo/populate_users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/first_project/first_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/first_project/first_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/first_project/first_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/first_project/first_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/first_project/first_app/templates/first_app/indexOLD2.html" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/15-Django_Level_Two/first_project/first_app/templates/first_app/indexOLD2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/16-Django_Level_Three/basicforms/basicapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/16-Django_Level_Three/basicforms/basicapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/my_projects/first_project/.idea/first_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/.idea/first_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_detection/gmm_tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/visual_detection/gmm_tracking.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +81,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -183,8 +121,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.launch_instance">
+  <component name="RunManager" selected="JavaScript Debug.Part2_Forms.html">
     <configuration name="My_Signup.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3/udemy_django/06-Bootstrap/My_BS_Project/My_Signup.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Part2_Forms.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/python3/udemy_django/06-Bootstrap/Part2_Forms.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="users.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3/templates/homework/users.html" useBuiltInWebServerPort="true">
@@ -248,28 +189,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/templatetags/my_extras.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="populate_first_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="first_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/udemy_django/my_projects/first_project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/my_projects/first_project/populate_first_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,18 +272,18 @@
       <item itemvalue="Django server.first_project" />
       <item itemvalue="JavaScript Debug.My_Signup.html" />
       <item itemvalue="JavaScript Debug.users.html" />
+      <item itemvalue="JavaScript Debug.Part2_Forms.html" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.populate_first_app" />
       <item itemvalue="Python.my_extras" />
       <item itemvalue="Python.launch_instance" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Part2_Forms.html" />
         <item itemvalue="Python.launch_instance" />
         <item itemvalue="Python.my_extras" />
         <item itemvalue="JavaScript Debug.users.html" />
         <item itemvalue="JavaScript Debug.My_Signup.html" />
-        <item itemvalue="Python.populate_first_app" />
       </list>
     </recent_temporary>
   </component>
@@ -400,7 +319,11 @@
       <workItem from="1579383916176" duration="361000" />
       <workItem from="1579384357854" duration="1859000" />
       <workItem from="1579747836743" duration="2000" />
-      <workItem from="1579910117953" duration="2386000" />
+      <workItem from="1579910117953" duration="2939000" />
+      <workItem from="1579987197005" duration="2000" />
+      <workItem from="1581296007550" duration="1851000" />
+      <workItem from="1581309334239" duration="1105000" />
+      <workItem from="1582084943668" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="django course">
       <created>1578018156814</created>

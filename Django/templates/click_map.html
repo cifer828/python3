@@ -1,0 +1,342 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html, body, #allmap{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin:0;
+            font-family:"微软雅黑";
+        }
+        #allmap{
+            width: 80%;
+            display: inline-block
+        }
+        #photo-gps{
+            width: 19%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        #gps{
+            margin-top: 10px;
+        }
+        #photo{
+            height: 20%;
+            text-align: center;
+        }
+        span{
+            display: inline-block;
+        }
+        #imgPre{
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+        .btn-div{
+            text-align: center;
+        }
+        .button{
+            margin: auto;
+        }
+        #img-select{
+            overflow-y: scroll;
+            height: 150px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #download-div{
+            text-align: center;
+        }
+        .button-dl{
+            width: 60%;
+            margin: 10px auto;
+        }
+        #loading{
+            margin-top: 150px;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=uiZdiRSqbUZzD49GtHCu10srdkR7qKaC"></script>
+    <title>单击获取点击的经纬度</title>
+</head>
+<body onload="add_photo()">
+    <div id="allmap" ></div>
+    <div id="photo-gps">
+        <div id="photo">
+            <form action="">
+                <input type="file" name="imgOne" id="imgOne" onchange="selectImage(this,'imgPre');" />
+                <img id="imgPre" src="" style="display: inline-block;" />
+                <span id="test"></span>
+                <div class="btn-div">
+                    <input type="button"  href='#' class='button' onclick="uploadImage();" value="提交"/>
+                </div>
+            </form>
+        </div>
+        <span id="loading"> </span>
+        <div id = 'img-select'>
+        </div>
+        <div id="download-div">
+        <input type ='button' class='button-dl' onclick="download();" value="下载"/>
+        <div id="gps">
+            <div class = 'photo-info'>
+             <label>照片名称:</label>
+             <span id="photo-name"> </span>
+            </div>
+            <div class = 'photo-info'>
+             <label>GPS信息:</label>
+             <span id="gps-info"> {{ GPSInfo }} </span>
+            </div>
+            <div class = 'photo-info'>
+             <label>经度: </label>
+             <span id="longitude"> {{ lng }}</span>
+            </div>
+            <div class = 'photo-info'>
+             <label>纬度: </label>
+             <span id="latitude"> {{ lat }}</span>
+            </div>
+        </div>
+        <div class="btn-div">
+            <input type="button" class='button' onclick="submitgps();" value="为照片添加GPS"/>
+        </div>
+    </div>
+</body>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    // 定位同济大学
+    var point = new BMap.Point(121.220124, 31.291881);
+    map.centerAndZoom(point, 17);
+    //setTimeout(function(){
+      //  map.panTo(point);
+    //}， 2000);  //两秒后移动到同济大学
+    map.enableScrollWheelZoom(true);
+    var marker = new BMap.Marker(point);  // 创建标注
+    //单击获取点击的经纬度
+    var lng = 0;
+    var lat = 0;
+    map.addEventListener("click", function(e){
+        lng = e.point.lng;
+        lat =  e.point.lat;
+        // alert("经度:" + e.point.lng + " , " + "维度:" + e.point.lat);
+        $('#longitude').html(to_decimal(lng));
+        $('#latitude').html(to_decimal(lat));
+        map.removeOverlay(marker);
+        var new_point = new BMap.Point(lng, lat);
+        marker = new BMap.Marker(new_point);  // 创建标注
+        map.addOverlay(marker);               // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    });
+
+    var curFile;
+    // 选择上传照片，并在本地预览
+     function selectImage(file, targetId){
+         if(!file.files || !file.files[0]){
+             return;
+         }
+         var reader = new FileReader();
+         reader.onload = function(evt){
+             document.getElementById(targetId).src = evt.target.result;
+             img = evt.target.result;
+         };
+         var fileSize = file.files[0].size;
+         if (fileSize > 2000000) {
+             alert('文件过大，请上传小于2M的jpg的格式文件');
+             return;
+         }
+         reader.readAsDataURL(file.files[0]);
+         var filePath = $('#imgOne').val();
+         var regex = /[^\\]*$/;
+         curFile = regex.exec(filePath);
+         //alert(fileName);
+     }
+
+    // 将小数经纬度转换成度分秒
+    function to_decimal(degree){
+        var deg = Math.floor(degree);
+        var min = Math.floor((degree - deg) * 60);
+        var sec = (degree - deg - min / 60) * 3600;
+        return deg + '°' + min + "'" + sec.toFixed(4) + '"';
+    }
+
+    // 向服务器上传照片，识别照片自带gps信息
+    function uploadImage() {
+        // 获取照片名称
+        $('#photo-name').html(curFile);
+
+        // 判断照片是否存在
+        var exist = false;
+        $('#img-select').children('button').each(function(){
+            if ($(this).html() == curFile){
+                alert(curFile + '已存在');
+                exist = true;
+            }
+        });
+
+        if (!exist) {
+            // 上传照片
+            $.ajax({
+                type: 'POST',
+                url: '',
+                data: JSON.stringify({
+                    name: curFile, imgData: img
+                }),
+                dataType: 'json',
+                success: function (ret) {
+                    // 获取已上传照片gps信息
+                    $('#gps-info').html(ret['GPSInfo']);
+                    $('#latitude').html(to_decimal(ret['lat']));
+                    $('#longitude').html(to_decimal(ret['lng']));
+
+                    // 向img-selected 添加照片名称
+                    var btn = $("<button>" + curFile + "</button>").appendTo($('#img-select'));
+                    btn.attr('style', 'width:100%; border:0px; margin-top:1px;');
+                    btn.on('click', function () {// 正在读取图片时按钮变红
+                        $(this).css('background-color', 'red');
+                        curFile = $(this).html();
+                        displayOnMap(this);
+                    });
+                    alert('上传成功');
+                }
+            });
+            // 获取已上传照片gps信息，getJson实现
+            // $.getJSON('check', function (ret) {
+            // $('#gps-info').html(ret['GPSInfo']);
+            // $('#latitude').html(to_decimal(ret['lat']));
+            //  $('#longitude').html(to_decimal(ret['lng']));
+            //});
+        }
+    }
+
+    // ajax提交并修改照片gps信息
+    function submitgps(){
+        //alert(curFile);
+        $.ajax({
+            url: "",
+            data: JSON.stringify({
+                name: curFile,
+                latitude: lat.toString(),
+                longitude: lng.toString()
+            }),
+            dataType: "text",
+            type: "POST",
+            success: function(data) {
+                 alert('成功添加gps信息')
+            }
+        });
+    }
+
+    // 自定义覆盖物图片
+    function PhotoOverlay(point, Imgsrc) {
+        this._point = point;
+        this._Imgsrc = Imgsrc;
+    }
+    PhotoOverlay.prototype = new BMap.Overlay();
+    PhotoOverlay.prototype.initialize = function(map){
+        this._map = map;
+        // 创建覆盖物div容器
+        var div = document.createElement("div");
+        div.style.position = "absolute";
+        // 覆盖物容器样式
+        div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+        div.style.border = "2px solid grey";
+        div.style.color = "white";
+        div.style.height = "70px";
+        div.style.width = "100px";
+        // 向容器添加图片
+        var preImg = document.createElement('img');
+        preImg.id = curFile;
+        preImg.style.width = '100%';
+        preImg.style.height = '100%';
+        preImg.src = this._Imgsrc;
+        div.appendChild(preImg);
+        // 将div添加到覆盖物容器中
+        map.getPanes().markerPane.appendChild(div);
+        // 保存div实例
+        this._div = div;
+    };
+    // 实现绘制方法
+    PhotoOverlay.prototype.draw = function(){
+        // 根据地理坐标转换为像素坐标，并设置给容器
+        var position = this._map.pointToOverlayPixel(this._point);
+        this._div.style.left = position.x - 50 + "px";
+        this._div.style.top = position.y - 35 + "px";
+    };
+    //添加自定义覆盖物
+    //var myPhotoOverlay = new PhotoOverlay(point, 'photos/test.jpg');
+    //map.addOverlay(myPhotoOverlay);
+
+    // 遍历服务器存储图片，并向img-selected 添加照片名称
+    function add_photo(){
+        $.getJSON('addPhotos', function(ret){
+            photoNames = ret[0]
+            for (var i = photoNames.length - 1; i >= 0 ; i--){
+                var btn = $("<button>" + photoNames[i] + "</button>").appendTo($('#img-select'));
+                btn.attr('style', 'width:100%; border:0px; margin-top:1px;');
+                btn.on('click', function(){
+                    // 正在读取图片时按钮变红
+                    $(this).css('background-color', 'red');
+                    curFile = $(this).html();
+                    displayOnMap(this);
+                });
+            }
+        });
+    }
+
+    // 在地图指定坐标添加照片缩略图
+    function displayOnMap(btn){
+        var selectedPhoto = curFile;
+        // alert(selectedPhoto);
+        $.ajax({
+            type:'POST',
+            url: '',
+            data: JSON.stringify({
+                filename: selectedPhoto
+            }),
+            dataType: 'json',
+            success: function(response){
+                // 读取并显示图片名称和gps信息
+                $('#photo-name').html(selectedPhoto);
+                $('#gps-info').html(response['GPSInfo']);
+                $('#latitude').html(to_decimal(response['lat']));
+                $('#longitude').html(to_decimal(response['lng']));
+                // 若图片自带gps信息则在地图上显示
+                if (response['GPSInfo'] == 'YES'){
+                    var new_point = new BMap.Point(response['lng'], response['lat']);
+                    var myPhotoOverlay = new PhotoOverlay(new_point, response['base64']);
+                    map.addOverlay(myPhotoOverlay);
+                    map.centerAndZoom(new_point, 17);
+                }
+                // 读取完毕后按钮变红
+                $(btn).css('background-color', 'green');
+            }
+        });
+    }
+    // 下载图片
+    function download(){
+        window.open(document.getElementById(curFile).src);
+    }
+
+
+    // var request = new XMLHttpRequest(); // 新建XMLHttpRequest对象
+    // request.onreadystatechange = function () { // 状态发生变化时，函数被回调
+    // if (request.readyState === 4) { // 成功完成autocad2004chinese32-64bit
+    //     // 判断响应结果:
+    //     if (request.status === 200 || request.status == 0) {
+    //         // 成功，通过responseText拿到响应的文本:
+    //         alert(request.responseText)
+    //     } else {
+    //         // 失败，根据响应码判断失败原因:
+    //         alert(request.status);
+    //     }
+    // } else {
+    //     // HTTP请求还在继续...
+    //         }
+    //         // 发送请求:
+    // request.open('GET', "http://127.0.0.1:8000/");
+    // request.send();
+    // };
+
+</script>
+</html>
