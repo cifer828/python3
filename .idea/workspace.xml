@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ccCrawler/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scientific/test/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mom_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/mom_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/.idea/gps_data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ccCrawler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps_data/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps_data/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/gps_data/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gps_data/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmm/forward.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hmm/train.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,10 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Part2_Forms.html">
-    <configuration name="My_Signup.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3/udemy_django/06-Bootstrap/My_BS_Project/My_Signup.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test (1)">
     <configuration name="Part2_Forms.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/python3/udemy_django/06-Bootstrap/Part2_Forms.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -189,6 +211,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/templatetags/my_extras.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,20 +314,20 @@
     <list>
       <item itemvalue="Django server.ProTwo" />
       <item itemvalue="Django server.first_project" />
-      <item itemvalue="JavaScript Debug.My_Signup.html" />
       <item itemvalue="JavaScript Debug.users.html" />
       <item itemvalue="JavaScript Debug.Part2_Forms.html" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.my_extras" />
       <item itemvalue="Python.launch_instance" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="JavaScript Debug.Part2_Forms.html" />
         <item itemvalue="Python.launch_instance" />
         <item itemvalue="Python.my_extras" />
         <item itemvalue="JavaScript Debug.users.html" />
-        <item itemvalue="JavaScript Debug.My_Signup.html" />
       </list>
     </recent_temporary>
   </component>
@@ -324,6 +368,10 @@
       <workItem from="1581296007550" duration="1851000" />
       <workItem from="1581309334239" duration="1105000" />
       <workItem from="1582084943668" duration="30000" />
+      <workItem from="1583003422568" duration="386000" />
+      <workItem from="1583102254457" duration="9912000" />
+      <workItem from="1583714432155" duration="6000" />
+      <workItem from="1583964910744" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="django course">
       <created>1578018156814</created>
@@ -385,7 +433,7 @@
     <SUITE FILE_PATH="coverage/python3$launch_instance.coverage" NAME="launch_instance Coverage Results" MODIFIED="1579385085271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AWS" />
     <SUITE FILE_PATH="coverage/python3$Part3_OOP_Project.coverage" NAME="Part3_OOP_Project Coverage Results" MODIFIED="1577921608703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/13-Python_Level_Two" />
     <SUITE FILE_PATH="coverage/python3$models.coverage" NAME="models Coverage Results" MODIFIED="1578454954560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework" />
-    <SUITE FILE_PATH="coverage/python3$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1578021730981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python3$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1583120508456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
     <SUITE FILE_PATH="coverage/python3$akuna_order_markig.coverage" NAME="akuna_order_markig Coverage Results" MODIFIED="1576437847576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
     <SUITE FILE_PATH="coverage/python3$TEST.coverage" NAME="TEST Coverage Results" MODIFIED="1576437859612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
   </component>

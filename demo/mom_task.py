@@ -7,7 +7,6 @@ import time
 from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver.support.wait import WebDriverWait
 
-
 download_url = "http://tjedu.tjjy.com.cn/api/front/localres/first?flagIp=false"
 
 upload_headers = {
