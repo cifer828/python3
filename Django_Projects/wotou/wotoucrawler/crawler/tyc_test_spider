@@ -1,0 +1,183 @@
+# coding=utf-8
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from pyquery import PyQuery as pq
+from lxml import etree
+import xlrd
+dc_ap = dict(DesiredCapabilities.PHANTOMJS)
+dc_ap["phantomjs.page.settings.userAgent"] = (
+     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36"
+ )
+driver = webdriver.PhantomJS(desired_capabilities=dc_ap)
+driver = webdriver.Chrome()
+waits = WebDriverWait(driver, timeout=5)  # 定义等待时间
+
+
+def search(company_name):
+    """
+    :param company_name: 查询企业的名称
+    :return:利用递归函数，如果爬虫出现异常就重新执行一遍search函数
+    """
+    try:
+        driver.get("http://www.tianyancha.com")  # 爬虫入口点
+        input_key = waits.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#live-search')))
+        sublime = waits.until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+                                                         '#ng-view > div > div.mainV3_tab1 > div.mainv2_tab1 > '
+                                                         'div.content.text-center > div.input-group.inputV2 > div')))
+        input_key.send_keys(company_name)
+        sublime.click()
+        print('链接成功')
+        get_products()
+    except TimeoutException:
+        return search(company_name)
+
+
+def get_products():
+    """
+    :return:
+    """
+    waits.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#ng-view > div.company_top.ng-scope > div > div > '
+                                                                'div.col-9.search-2017-2 > '
+                                                                'div.b-c-white.search_result_container.ng-scope > '
+                                                                'div:nth-child(1) > div.search_right_item > '
+                                                                'div.row.pb10 > div.col-xs-10.search_repadding2.f18 > '
+                                                                'a')))
+    html = driver.page_source
+    doc = pq(html)
+    selector = etree.HTML(doc.html())
+    business_url = selector.xpath('//a[@class="query_name search-new-color"]/@href')
+    driver.get(business_url[0])
+    waits.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#ng-view > div.ng-scope > div > div > div > '
+                                                                'div.col-9.company-main.pl0.pr20.pt18'
+                                                                '.company_new_2017 > div > div.row.position-rel > '
+                                                                'div.company_name_box.in-block.vertical-top > div > '
+                                                                'div.company_info_text')))
+    html_parser = driver.page_source
+    doc_parser = pq(html_parser)
+    selector_parser = etree.HTML(doc_parser.html())
+
+    # 头部信息
+    parser_title = selector_parser.xpath('//div[@class="in-block ml10 f18 mb5 ng-binding"]/text()')
+    herder_information = selector_parser.xpath('//span[@class="contact_way_title"]/text()')
+    herder_information_text = selector_parser.xpath('//div[@class="company_info_text"]/span[@class="ng-binding"]/text()')
+    herder_information_url = selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[1]/div['
+                                                   '1]/div/div[2]/span[3]/a/text()')
+    # print(parser_title, herder_information, herder_information_url, herder_information_text)
+
+    # 基本信息
+    basic_information = selector_parser.xpath('//div[@id="nav-main-baseInfo"]/text()')
+    legal_representative = selector_parser.xpath('//div[@class="baseinfo-module-content-title"]/text()')
+    representative = selector_parser.xpath('//div[@class="baseinfo-module-content-value ng-binding"]/@title')
+    legal = selector_parser.xpath('//a[@class="ng-binding ng-scope"]/@title')
+    c8_text = selector_parser.xpath('//div[@class="c8"]/text()')
+    c8_span_text = selector_parser.xpath('//div[@class="c8"]/span[@class="ng-binding"]/text()')
+    c8_div = selector_parser.xpath('//div/span/span[@class="ng-binding ng-scope"]/text()')
+    # print(basic_information, legal_representative, representative, legal)
+    # print(c8_div, c8_text, c8_span_text)
+
+    # 主要人员(不完善)
+    position = selector_parser.xpath('//div[@class="staffinfo-module-content-value"]/span[@class="ng-binding '
+                                     'ng-scope"]/text()')
+    position_text = selector_parser.xpath('//div[@class="staffinfo-module-content-title"]/a[@class="ng-binding '
+                                          'ng-isolate-scope"]/text()')
+    # print(position_text, position)
+
+    # 股东信息(不完善)
+    waits.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#ng-view > div.ng-scope > div > div > div > '
+                                                                'div.col-9.company-main.pl0.pr20.pt18'
+                                                                '.company_new_2017 > div > div:nth-child(9) > '
+                                                                'div.ng-scope > table > tbody > tr > td > a')))
+    shareholder_information = selector_parser.xpath('//*[@id="ng-view"]/div[@class="ng-scope"]/div/div/div/div['
+                                                    '@class="col-9 company-main pl0 pr20 pt18 '
+                                                    'company_new_2017"]/div/div[@class="ng-scope"]/div['
+                                                    '@class="ng-scope"]/table/tbody/tr/td[1]/a/text()')
+    shareholder = selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[8]/div['
+                                        '2]/table/tbody/tr/td[1]/a/text()')
+    subscribe_for_funding = selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[8]/div['
+                                                  '2]/table/tbody/tr/td[3]/text()')
+    funded_ratio = selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[8]/div['
+                                         '2]/table/tbody/tr/td[2]/div/div/span/text()')
+    # print(shareholder_information, shareholder, subscribe_for_funding, funded_ratio)
+
+    # 对外投资
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/thead/tr/th/a/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[1]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[2]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[3]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[4]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[5]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[6]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[10]/div[2]/div/table/tbody/tr/td[7]/span/text()')
+    # print(a0, a1)
+
+    # 变更记录
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[11]/div[2]/div/table/thead/tr/th/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[11]/div[2]/div/table/thead/tr/td[1]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[11]/div[2]/div/table/tbody/tr/td[2]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[11]/div[2]/div/table/tbody/tr/td[3]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[11]/div[2]/div/table/tbody/tr/td[4]/span/text()')
+
+    # 法律诉讼
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[17]/div[2]/div/table/thead/tr/th/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[17]/div[2]/div/table/tbody/tr/td[1]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[17]/div[2]/div/table/tbody/tr/td[2]/a/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[17]/div[2]/div/table/tbody/tr/td[3]/span/text()')
+    selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[17]/div[2]/div/table/tbody/tr/td[4]/span/text()')
+
+    # 年报
+    year_url = selector_parser.xpath('//*[@id="ng-view"]/div[2]/div/div/div/div[1]/div/div[12]/div[2]/div[1]/a/@href')
+    if year_url:
+        year_url = 'http://www.tianyancha.com' + year_url[0]
+        driver.get(year_url)
+        html_year = driver.page_source
+        doc_year = pq(html_year)
+        selector_year = etree.HTML(doc_year.html())
+        title_year = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[1]/text()')
+        table1_line_1 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[1]/table/tbody/tr[1]/td/div/text()')
+        table1_line_2 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[1]/table/tbody/tr[2]/td/div/text()')
+        table1_line_3 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[1]/table/tbody/tr[3]/td/div/text()')
+        table1_line_4 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[1]/table/tbody/tr[4]/td/div/text()')
+        table1_line_5 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[1]/table/tbody/tr[5]/td/div/text()')
+
+        table2_line_1 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/table/thead/tr/th/div/text()')
+        table2_line_2 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/table/tbody/tr/td/div/text()')
+
+        table3_line1 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[3]/table/thead/tr/th/div/text()')
+        table3_line2 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[3]/table/tbody/tr[1]/td/div/text()')
+        table3_line3 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[3]/table/tbody/tr[2]/td/div/text()')
+        table3_line4 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[3]/table/tbody/tr[3]/td/div/text()')
+
+        table4_line1 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[4]/table/tbody/tr[1]/td/div/text()')
+        table4_line2 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[4]/table/tbody/tr[2]/td/div/text()')
+        table4_line3 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[4]/table/tbody/tr[3]/td/div/text()')
+        table4_line4 = selector_year.xpath('//*[@id="ng-view"]/div[1]/div[2]/div/div[1]/div[2]/div[4]/table/tbody/tr[4]/td/div/text()')
+
+
+def get_excel():
+    """
+    :return: 遍历excel，返回数据列表
+    """
+    business = list()
+    data = xlrd.open_workbook('生物医药企业列表0617.xlsx')
+    table = data.sheets()[0]
+    business_list = str(table.nrows)
+    print('待查企业:%s' % business_list)
+    for i in range(table.nrows):
+        text = table.row_values(i)[0]
+        business.append(text)
+    return business
+
+
+def main():
+    company_name = get_excel()
+    for name in company_name:
+        search(name)
+
+
+if __name__ == '__main__':
+    main()
