@@ -1,0 +1,834 @@
+/Users/qiuchenzhang/anaconda3/envs/python36/bin/python3 /Users/qiuchenzhang/Code/Python/python3/Crawlers/ccCrawler/project_zone_crawler.py
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> S20 15-619 Cloud Computing- (writeup: Cloud account setup (Required)) - TheProject.Zone </title>
+
+    <link rel="shortcut icon" type="image/png" href="/static/website/images/favicon.png"/>
+
+    <!-- Compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/website/css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" href="/static/website/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="/static/website/css/bootstrap-toggle.min.css" />
+    <link rel="stylesheet" href="/static/website/css/jasny-bootstrap.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" integrity="sha384-feuj7rKXjU3ab4TXdk66vl9bpF8MgQADmGa8JxkC1T8WOlIrTAexWZtb2kLc/q1f" crossorigin="anonymous">
+
+
+
+
+
+
+<style>
+    .fixed-content {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .submission-password-fixed .panel {
+        margin-top: 0px;
+        border-bottom: 1px solid #ddd;
+        padding-right: 45px;
+    }
+    .page-header {
+        padding-top: 125px;
+    }
+</style>
+
+<!-- All of this for 3 stupid icons in the sidebar :-) -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="/static/website/css/tpz.css" />
+
+    <!-- Compiled and minified jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="/static/website/js/popup_message.js"></script>
+
+    <!-- Converts list to checklist (for roles) -->
+    <script src="/static/website/js/checklist.js"></script>
+    <script src="/static/website/js/ajaxSubmitForm.js"></script>
+    <script src="/static/website/js/impersonate.js"></script>
+    <script src="/static/website/js/footer.js"></script>
+    <script src="/static/website/js/modals.js"></script>
+    <script src="/static/website/js/tagautoinput.js"></script>
+
+
+
+
+</head>
+<body>
+    <div class="container">
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <div class="btn-group">
+            <button type="button" class="btn btn-link dropdown-toggle vertically-centered" data-toggle="dropdown">
+                <img height="40" src="/static/website/images/favicon.png">
+                <span class="caret vertically-centered" ></span>
+            </button>
+            <ul class="dropdown-menu" id="menu">
+                <li><a href="/courses">Courses</a></li>
+
+            </ul>
+        </div>
+
+<span class="vertically-centered">
+      <a type="button" class="btn btn-default"
+         href="/s20-15619">S20 15-619 Cloud Computing</a>
+    </span>
+
+
+
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+
+            <button type="button" class="btn btn-link dropdown-toggle vertically-centered" data-toggle="dropdown">
+                <img height="40" src="/profile_picture/qiuchenz@andrew.cmu.edu" />qiuchenz@andrew.cmu.edu
+                <span class="caret vertically-centered" ></span>
+            </button>
+
+            <ul class="dropdown-menu" id="right_menu">
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/logout">TPZ Logout</a></li>
+
+            </ul>
+
+
+
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+</nav>
+<ul class="nav nav-tabs">
+
+</ul>
+
+<div class="container outer wrapper">
+    <div class="row">
+        <div class="col-xs-11">
+
+<div class="fixed-content">
+
+
+<style>
+    .nav-tabs-fixed {
+        margin-bottom: 0px;
+        min-height: 52px;
+        margin-right: 32px;
+    }
+</style>
+
+<nav class="navbar navbar-default nav-tabs-fixed">
+    <ul class="nav nav-tabs">
+
+
+            <li id="writeup_tab" class="active">
+                <a href="/s20-15619/account-setup">Writeup</a>
+            </li>
+
+
+
+
+
+
+            <li id="cost_tab" >
+                <a href="/s20-15619/account-setup/costs">AWS Costs</a>
+            </li>
+
+
+
+    </ul>
+</nav>
+
+    <div class="row submission-password-fixed">
+        <div>
+
+<div class="panel panel-body col-xs-12">
+    <button class="btn btn-primary pull-right" id="btn_show_password">Show Submission Password</button>
+    <div id="show-password" style="display:none">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span class="gi-2x">
+                    &nbsp;
+                </span>
+                <span class="pull-left gi-2x">
+                    <small>Submission Password</small>
+                </span>
+                <span class="pull-right col-xs-6">
+                    <div class="input-group">
+
+                        <input type="text" class="form-control" value="4kZQLhEyg4aIPE9y0TDMJ2" id="snipsnip" readonly/>
+
+
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button" data-clipboard-target="#snipsnip" id="snipper">Copy</button>
+                        </span>
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button" id="btn_hide_password">Close</button>
+                        </span>
+                    </div>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <script>
+        $('#btn_hide_password').on('click', function() {
+            $('#show-password').hide(400);
+            $('#btn_show_password').show(400);
+        });
+    </script>
+
+
+        </div>
+    </div>
+</div>
+<h1 class="page-header">Cloud account setup (Required)
+    <small>
+        Set up AWS, Azure and GCP accounts
+    </small>
+</h1>
+<div class="container-fluid" data-spy="scroll" style="position:relative">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="progress">
+                <div class="progress-bar progress-bar-success"
+                role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"/>
+            </div>
+
+            <span>Not yet started</span>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-sm-12 col-lg-3">
+
+        <nav id="leftCol">
+
+            <ul class="nav nav-stacked nav-pills" id="writeup_sidebar2">
+                <li>
+</li>
+
+
+                <li>
+                    <a href="#section_1" class="list-group-item">
+                        <i class="fa fa-check fa-lg"></i>
+                        <span> AWS Account Setup</span>
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#section_3" class="list-group-item">
+                        <i class="fa fa-check fa-lg"></i>
+                        <span> Azure Account Setup</span>
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#section_5" class="list-group-item">
+                        <i class="fa fa-check fa-lg"></i>
+                        <span> GCP Account Setup</span>
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+    </div>
+    <div class="col-sm-12 col-lg-9" data-target="#leftCol">
+
+
+
+
+
+
+
+
+<div class="panel panel-default writeup_section" data-sequence="1"
+     writeup-id="40942" writeup-title="AWS Account Setup">
+    <div class="panel-heading">
+        <a name="section_1">AWS Account Setup</a>
+        <span class="pull-right">
+
+
+
+
+        </span>
+    </div>
+    <div class="panel-body writeuppanel">
+
+        <h1>Create an AWS account and sign up to the AWS Educate portal</h1>
+
+<p>Welcome to the Cloud Computing course! For the projects in this course, you will work on instances provisioned on Amazon EC2 (Elastic Compute Cloud) and utilize S3 (Simple Storage System) for persistent storage. In addition, we will be working with various other Amazon Web Services (AWS) technologies such as Elastic Block Store (EBS) and CloudWatch, among others. For more information about AWS, please refer to the <a href="http://aws.amazon.com">AWS website</a>, or read the AWS Primer in this course. Let's get started by creating an AWS account so that you can provision resources on AWS.</p>
+
+<h2>Create an AWS standard account</h2>
+
+<p>The following video will outline the steps necessary to create your own AWS account:</p>
+
+<p><div class="row"><div class="col-md-8"><div class="panel panel-default"><div class="panel-body"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" id="ytplayer" type="text/html" width="640" height="390"src="https://www.youtube.com/embed/1ey0EDVjyeY?autoplay=0&rel=0&showinfo=0&fs=1" frameborder="0" allowfullscreen></iframe></div></div></div></div></div></p>
+
+<p><strong>Video 1:</strong> AWS Sign Up</p>
+
+<p>Please follow the steps outlined below in order to set up your AWS account for use with the course:</p>
+
+<ol>
+<li><p>Create a new AWS account at <a href="http://aws.amazon.com">http://aws.amazon.com</a> by clicking on <strong>Sign In to the Console</strong>.</p></li>
+<li><p>Follow the onscreen instructions as outlined in the video. You will need to enter a credit/debit card and address information as EC2 requires a credit card on file for use. A $1 (USD) hold may occur on the card during verification. However, the Cloud Computing Course will provide you with a $50 AWS coupon to complete the projects in this course. Instructions on how to receive the coupon are provided later.</p></li>
+<li><p><strong>Ensure that you sign up for only basic support when asked.</strong> Use a personal, not a company AWS account.</p></li>
+<li><p>Once you have completed the AWS sign up, and completed the phone verification process, wait for AWS authorization mail and activation. This can take up to one business day.</p></li>
+<li><p>You can now sign into your account at <a href="http://aws.amazon.com">http://aws.amazon.com</a>.</p></li>
+<li><p>Sign in to AWS and retrieve your AWS Account ID (which you can find in <code>my account</code> menu option under your name).</p></li>
+<li><p>Update your <a href="https://theproject.zone/profile/">profile page</a> on theproject.zone (TPZ) - enter your AWS account id in the <code>aws-id</code> field.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/Update_Info.PNG" alt="Updating your profile" /></p>
+
+<p><strong>Figure:</strong>  Make sure to press Submit Query to save the value</p></li>
+<li><p>Within a couple of minutes you should receive a consolidated billing request in your email, please click and approve the request you get by email from AWS so that your EC2 usage can be charged to the university.</p>
+
+<ol>
+<li>If you need to change your AWS Id after receiving an AWS invitation email, please create a private Piazza post with the old and new AWS ids.</li>
+</ol></li>
+</ol>
+
+<p><div class="panel panel-warning"> <div class="panel-heading">Warning</div> <div class="panel-body"> </p>
+
+<h4>Warning</h4>
+
+<p>After we issue the AWS account link request, you must click and approve the consolidated billing request that you get by email. Failure to do so will result in your account not being linked and you will be <strong><em>charged</em></strong> using the credit/debit card on file with AWS.</p>
+
+<p>You must provide your AWS account information and the email address used to create the account so that the course staff can issue an AWS account link request. Linking your AWS account to the course AWS account is mandatory otherwise you will not be able to gain access to course-specific resources on the cloud. If you do not add the AWS account id to your TPZ profile and accept the AWS invitation, your project submissions will not be accepted.</p>
+
+<p></div></div>
+<div class="panel panel-danger"> <div class="panel-heading">Danger</div> <div class="panel-body"> </p>
+
+<h4>Grade Penalties on Excessive Use</h4>
+
+<p>You are solely responsible for the usage of your AWS account. Each project in the course has an associated budget which must be followed strictly. Usage reports will be monitored by the instructors and excessive use will be grounds for grade penalties.</p>
+
+<p>Your AWS account that you create and link to the course should be used <strong>exclusively</strong> for the projects in this course. This account must not be used for any private work or for other courses/projects at CMU or elsewhere.
+</div></div></p>
+
+<h4>Dropping the Course</h4>
+
+<p>You will be removed from the AWS consolidated billing if you drop the course. You will receive an email indicating that you will be removed from the billing account. After you have been removed from the course account, any resources that you have left running will be billed on the card you have used to sign up for AWS. Please ensure that you terminate all resources and delete your account, if you do not plan to use AWS in the future.</p>
+
+<h2>Sign up to the AWS Educate portal</h2>
+
+<p>AWS Educate is a portal to the global university community who use AWS. All CMU students who will use AWS in their courses should sign up once to AWS Educate. </p>
+
+<p>If you have previously signed up for an AWS Educate Account using your <strong><em>@andrew.cmu.edu</em></strong> email address, you do not need to re-apply.</p>
+
+<p>If you have not signed up yet, please sign up for an AWS Educate Account using your <strong><em>@andrew.cmu.edu</em></strong> email account. Please follow the steps outlined below in order to set up your AWS Educate account for use with the course:</p>
+
+<ol>
+<li>Visit the <a href="https://aws.amazon.com/education/awseducate/apply/">Apply for AWS Educate</a> page.</li>
+<li>Click on the <strong>Apply for AWS Educate for Students</strong>.</li>
+<li>Select <strong>Student</strong> and click on <strong>Next</strong>.</li>
+<li>Fill out the application with your information and fill out your AWS Account ID when asked, click on <strong>Next</strong></li>
+<li>As you fill out your application, you should receive an email. Verify your email address on the next page and click on <strong>Next</strong>.</li>
+<li>Accept the terms and conditions on the next page and finish the application.</li>
+<li>You should receive an email confirmation from AWS indicating that you have successfully joined the AWS Educate program.</li>
+</ol>
+
+<p><div class="panel panel-info"> <div class="panel-heading">Information</div> <div class="panel-body"> </p>
+
+<p>Please take note of the difference between an AWS account and an account of the AWS Educate portal. They are two different entities for different purposes thus have nothing to do with each other.</p>
+
+<p>If you are using the same Andrew Email to sign up an AWS account and an account of the AWS Educate portal, each of the account has its own lifecycle.</p>
+
+<p>The policy of "exclusive usage for the cloud course" only applies to an AWS account. An AWS account can be an AWS standard account (either individual or professional) or an AWS Educate starter account. The account of the AWS Educate portal has nothing to do with this policy. An AWS Educate starter account is a special AWS account that requires no credit card to join AWS. An AWS Educate Starter Account may subject to a stricter quota limit and requires additional steps (e.g., to add a credit card) when you unlink your account at the end of the semester. We recommend that you use an AWS standard account instead.</p>
+
+<p>If you have any questions, when posting on Piazza, please avoid the term "AWS Educate account" and use "the account of the AWS Educate portal" to avoid confusion.</p>
+
+<p></div></div></p>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-default writeup_section" data-sequence="3"
+     writeup-id="41332" writeup-title="Azure Account Setup">
+    <div class="panel-heading">
+        <a name="section_3">Azure Account Setup</a>
+        <span class="pull-right">
+
+
+
+
+        </span>
+    </div>
+    <div class="panel-body writeuppanel">
+
+        <h1>Azure Account Setup</h1>
+
+<p><a href="https://azure.microsoft.com/">Microsoft Azure</a> is a cloud computing platform and infrastructure provider developed by Microsoft for building, deploying, and managing applications and services through a global network of Microsoft-managed and Microsoft partner hosted data centers. Microsoft Azure provides users a global array of cloud services such as compute services that provide virtual machine scale sets, application platform where you can create and deploy web apps, data storage services that provides database and data warehouse on the Azure cloud. A user can provision a server in minutes on Microsoft Azure, and manage Azure resources using analytical and monitoring tools.</p>
+
+<p>For more information about Azure, please refer to the <a href="http://azure.microsoft.com/">Azure Website</a> and the Azure Primer for this course.</p>
+
+<h2>Azure Account Sign Up</h2>
+
+<p>Please follow the steps outlined below in order to set up your Azure account for use with the course:</p>
+
+<ol>
+<li>Sign out of all other Microsoft services, or start a new incognito/private browsing session.</li>
+<li>Visit the <a href="https://www.microsoft.com/en-us/account/">Microsoft Accounts page</a> to begin the Microsoft Account (MSA) creation process.</li>
+<li><p>Click the <strong>Sign in</strong> link on the Microsoft Accounts page.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-1.png" alt="Microsoft Accounts Signin Link" /></p>
+
+<p><strong>Figure</strong>: Sign in link in upper right corner of Microsoft Accounts page</p></li>
+<li><p>Click the <strong>Create one!</strong> link to create a new MSA.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-2.png" alt="Create one link for new account" /></p>
+
+<p><strong>Figure</strong>: Elect to create a new MSA</p>
+
+<p><div class="panel panel-danger"> <div class="panel-heading">Danger</div> <div class="panel-body"> </p>
+
+<h4>Warning</h4>
+
+<p>Do <strong><em>not</em></strong> use your <strong>@andrew.cmu.edu</strong> or other CMU issued email address to create a Microsoft Account in the following step.
+</div></div></p></li>
+<li><p>Enter a valid, non Andrew email address and select a <strong><em>new</em></strong> password for the MSA. After completing the form, press <strong>Next</strong>.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-3.png" alt="Enter new email for MSA" /></p>
+
+<p><strong>Figure</strong>: Supply your non-Andrew email address. Create a new password.</p></li>
+<li><p>You will receive an verification email from <strong><em>account-security-noreply@account.microsoft.com</em></strong>.  Alternatively, you may be asked for a phone number and you will be sent the security code via SMS. Enter the security code from the email and press next.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-4.png" alt="Validate your email" /></p>
+
+<p><strong>Figure</strong>: Microsoft verification email</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-5.png" alt="azure-create-org-account-step-1" /></p>
+
+<p><strong>Figure</strong>: Enter the security code from the verification email</p></li>
+</ol>
+
+<h3>Azure for Students subscription</h3>
+
+<p>The next step is to set up an Azure subscription for your Azure account.</p>
+
+<p>Azure for Students subscription includes $100 in Azure credits to be used within the first 12 months.</p>
+
+<p>Go to <a href="https://azure.microsoft.com/en-us/free/students/">Azure for Students</a> to activate the free trial for students.</p>
+
+<p><div class="panel panel-warning"> <div class="panel-heading">Warning</div> <div class="panel-body">
+<strong><em>Note</em></strong> that you need to provide your school email to verify your academic status. If you are not able to activate Azure for Students, please contact the course staff as soon as possible. Note that one school email can only apply Azure for Students subscription once per year.
+</div></div></p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/activate-afs-verification.png" alt="Activate Azure for Students - Academic verification step" /></p>
+
+<p><strong>Figure</strong>: Activate Azure for Students - Academic verification step</p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/activate-afs-agreement.png" alt="Activate Azure for Students - Agreement step" /></p>
+
+<p><strong>Figure</strong>: Activate Azure for Students - Agreement step</p>
+
+<p>After you click “Sign up”, you will receive an email like the following figure:</p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/afs-activated-success.png" alt="Azure for Students Activated successfully email" /></p>
+
+<p><strong>Figure</strong>: Azure for Students Activated successfully email</p>
+
+<p>Then sign in with your Microsoft Azure account, and go to the “Cost Management + Billing - Subscriptions” section in the Azure portal. Now you have the active Azure for Students subscription in your account.</p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/afs-subscription.png" alt="Azure for Students subscription" /></p>
+
+<p><strong>Figure</strong>: Azure for Students subscription</p>
+
+<p>Now let us open an Azure Cloud Shell and attach a storage account for it. Click upper-right first Cloud Shell icon on the page header of the Azure portal.</p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/cloud-shell-icon.png" alt="Cloud Shell icon on the page header" /></p>
+
+<p><strong>Figure</strong>: Cloud Shell icon on the page header</p>
+
+<p>On the initial start, select “Create storage”, it will create a new storage account and add it into a new resource group for you.</p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/storage-for-cloud-shell.png" alt="Create storage for Cloud Shell on the initial start" /></p>
+
+<p><strong>Figure</strong>: Create storage for Cloud Shell on the initial start</p>
+
+<p><img src="https://s3.amazonaws.com/cmucc-public/webcontent/account-subscription-setup/azure-new-storage-account-resource-group.png" alt="Azure creates new storage account and resource group for Cloud Shell on the initial start" /></p>
+
+<p><strong>Figure</strong>: Azure creates new storage account and resource group for Cloud Shell on the initial start</p>
+
+<h3>Azure Classroom Subscription</h3>
+
+<p>Besides the Azure for Students subscription, you will receive an Azure Classroom Subscription per project that requires Azure resources. This week you will receive the first Azure Classroom Subscription by completing the steps below.</p>
+
+<ol>
+<li><p>Update your <a href="https://theproject.zone/profile">TPZ Profile</a> with the email address of the Microsoft Account.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-6.png" alt="Update azure-subscription-email in TPZ profile" /></p>
+
+<p><strong>Figure</strong>: Submit your Microsoft Account email in your TPZ profile</p></li>
+</ol>
+
+<p><div class="panel panel-warning"> <div class="panel-heading">Warning</div> <div class="panel-body"> </p>
+
+<p>Within 24 hours after you update your <a href="https://theproject.zone/profile">TPZ Profile</a> with the email address of the Microsoft Account, you will receive an email from <strong><em>azure-noreply@microsoft.com</em></strong> with information regarding the setup of your Azure Classroom Subscription.
+</div></div></p>
+
+<ol>
+<li><p>Once you have update the <code>azure-subscription-email</code> in your TPZ profile, you will receive an Azure lab assignment email within 24 hours. Click <strong>Accept lab assignment</strong> in the email. </p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-lab-setup-00.png" alt="Azure Lab Email" /></p>
+
+<p><strong>Figure</strong>: Azure Lab email</p></li>
+<li><p>After clicking the link in the email, you will be redirected to the Azure Portal. From here click <strong>Setup Lab</strong> to begin the subscription creation process.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-lab-setup-01.png" alt="Setup Lab from the Education Blade in the Azure Portal" /></p>
+
+<p><strong>Figure</strong>: Setup Lab from the Education Blade in the Azure Portal</p></li>
+<li><p>If this is the first time you are using the Azure Portal and Labs, you may be asked to accept the <strong>subscription agreement</strong>. Check the <strong>I agree</strong> box and click the <strong>Sign up</strong> button to continue.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-lab-setup-02.png" alt="Azure Subscription Agreement" /></p>
+
+<p><strong>Figure</strong>: Azure Subscription agreement and subscription creation process</p></li>
+<li><p>Once your Lab has been configured and the subscription has been created, you can click <strong>Go to lab</strong> to monitor the lab activity.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-lab-setup-03.png" alt="Successful Lab Setup" /></p>
+
+<p><strong>Figure</strong>: Successful Lab setup</p></li>
+<li><p>Finally, you may visit the Subscriptions page in the Azure Portal (under <code>More services</code> in the Azure Portal) to view all of your Azure subscriptions.</p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/azure-msa-signup-step-12.png" alt="Check the subscriptions" /></p>
+
+<p><strong>Figure</strong>: Your active subscription will be found in the Subscription page of the Azure Portal</p></li>
+</ol>
+
+<h3>Manage multiple Azure subscriptions</h3>
+
+<p>In the Azure Cloud Shell, run the following Azure CLI command to fetch the details of your account and subscriptions.</p>
+
+<pre><code>az account list --all --refresh --output table
+</code></pre>
+
+<p>If you have multiple subscriptions, you can use the command below to change the default subscription.</p>
+
+<p><div class="panel panel-warning"> <div class="panel-heading">Warning</div> <div class="panel-body">
+Please replace the <code>&lt;name or id&gt;</code>with the subscription name or id that you want to set as the default one.
+</div></div></p>
+
+<p><code>
+    az account set --subscription &lt;name or id&gt;
+</code></p>
+
+<p>The following command will display the information of your default subscription:</p>
+
+<p><code>
+    az account show
+</code></p>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-default writeup_section" data-sequence="5"
+     writeup-id="41334" writeup-title="GCP Account Setup">
+    <div class="panel-heading">
+        <a name="section_5">GCP Account Setup</a>
+        <span class="pull-right">
+
+
+
+
+        </span>
+    </div>
+    <div class="panel-body writeuppanel">
+
+        <h1>Google Cloud Platform (GCP) Account Setup</h1>
+
+<p><div class="panel panel-danger"> <div class="panel-heading">Danger</div> <div class="panel-body"> </p>
+
+<h3>Warning</h3>
+
+<p>When creating a GCP Account, <strong>DO NOT</strong> use any institute issued email address, e.g. an email with the domain <code>@andrew.edu.cmu</code>. You can redeem a coupon to an institute issued email address as normal; however, if your institute does not enable GCP feature of G Suite, you will not be able to use the account and you effectively lose the credits of the coupon.</p>
+
+<p>Hence, you must use your personal email address and we recommend you to use a Gmail address ending with <code>@gmail.com</code>. Again, a G Suite enabled email at your institute domain is <strong>NOT</strong> a Gmail address that you should use for our course.</p>
+
+<p></div></div></p>
+
+<p>For the projects in this course, you will create and work with infrastructure using GCP's Compute services (Compute Engine, Container Engine, Networking, etc), Storage services (Cloud Storage, Cloud SQL, Persistent Disk, etc), Monitoring services, and Big Data services.</p>
+
+<p>For more information about the products GCP offers, please refer to <a href="https://cloud.google.com/products">GCP's product page</a> and the Google Cloud Platform Primer.</p>
+
+<p>We'll start by creating a brand new Google account that will only be using for this course.</p>
+
+<p><strong><em>Please use an incognito/private browsing session to avoid encountering any issues.</em></strong></p>
+
+<p>The course staff understands that students may have their own Google accounts for personal or work use, and potentially even their own personal or work GCP accounts setup - due to these realities, we require that you create a new Google account.</p>
+
+<h2>GCP Account</h2>
+
+<p>Please follow the steps outlined below in order to set up your new Google account for use with the course:</p>
+
+<ol>
+<li>Create a new Google account by visiting <a href="https://accounts.google.com/SignUp">https://accounts.google.com/SignUp</a> in an incognito/private browsing session.
+<ul>
+<li>For your username, we <em>suggest</em> that you use create an account such as "yourandrewid.gcp@gmail.com". </li>
+<li>You may choose another username as long as you can easily differentiate this account from your other Gmail accounts.</li>
+</ul></li>
+<li>After you've finished the Sign Up form, click the Next Step button, and Agree to the Privacy and Terms Agreement. Click Continue on the following page.</li>
+<li>You should have been directed to <a href="https://www.google.com">https://www.google.com</a> as your new user, yourandrewid.gcp@gmail.com. To ensure this is the case, click on the top right icon of the screen to validate that your email, yourandrewid.gcp@gmail.com, appears in the dropdown.</li>
+<li>Now make sure to visit https://gmail.com, login with your new Gmail, and <a href="https://support.google.com/mail/answer/10957?hl=en">create an email forwarding rule</a> to forward email from your new Gmail for GCP to your primary email address. This step will enable you to receive the GCP budget alarms in a timely manner.</li>
+<li>In the same incognito browser session, visit <a href="https://console.cloud.google.com">https://console.cloud.google.com</a>.</li>
+<li><p>You should be greeted with the following message</p>
+
+<pre><code>Welcome User!
+Create and manage your Google Cloud Platform instances, disks, networks, and other resources in one place. ...
+</code></pre></li>
+<li><p>Select "Yes" to the Email preferences and Terms of Service and the usage agreement, then click Continue.</p></li>
+</ol>
+
+<h2>Redeeming coupon for your Google account</h2>
+
+<p>The $50 GCP coupon is available in your <a href="https://theproject.zone/profile">TPZ Profile</a> under the <code>gcp-coupon</code> heading.</p>
+
+<p>In order to redeem GCP coupon,</p>
+
+<ol>
+<li><p>Visit <a href="https://console.cloud.google.com/education">https://console.cloud.google.com/education</a> in <strong>private mode in your browser to avoid logging in with a wrong account by mistake if you have multiple active Google accounts</strong>. </p></li>
+<li><p>Login using your Google account. <strong>Make sure you select the correct Google account if you have multiple active Google accounts.</strong>.</p></li>
+<li><p>Enter your provided coupon code from your <a href="https://theproject.zone/profile">TPZ Profile</a> </p>
+
+<p><img src="https://s3.amazonaws.com/15619public/webcontent/gcp_coupon_1.png" alt="GCP Coupon" /></p>
+
+<p><strong>Figure</strong> - GCP Coupon in TPZ profile</p></li>
+<li><p>Select "Yes" or "No" to be emailed about updates regarding feature announcements, performance suggestions, feedback surveys and special offers.</p></li>
+<li><p>Click "Accept and Continue".</p></li>
+</ol>
+
+<p>This will create an billing account for your GCP account. To view and change billing accounts, go to <a href="https://console.cloud.google.com/billing">https://console.cloud.google.com/billing</a>.</p>
+
+<h2>(Optional) Getting an additional $300 GCP Free Tier Credit by supplying a credit card</h2>
+
+<ol>
+<li>Login to the GCP Console</li>
+<li>If your account is new, in the top right of the new page, there should be a "Sign Up For Free Trial" button - click it!</li>
+<li>Select an option for receive notifications and select "Yes" to the Terms of Service agreement, then click Agree and continue.</li>
+<li>Now you have to create a billing account. <strong>BE SURE TO SELECT INDIVIDUAL FOR YOUR ACCOUNT TYPE</strong>. Enter in your desired name and address and a payment method, but don't worry, you'll be getting $300 USD in credits without charge.</li>
+<li>Once you've completed that form click "Start My Free Trial".</li>
+<li>You should receive a welcome message thanking you for starting a 365-day free trial with $300 to spend during those 365 days.</li>
+</ol>
+
+<h2>Deploying your first project</h2>
+
+<ol>
+<li>Feel free to select "Tour the Console" to take a guided tour of the features of GCP or select "Got it" to proceed.</li>
+<li>For your first project (which may have been created for you), go to <a href="https://console.cloud.google.com/billing/">https://console.cloud.google.com/billing/</a> and select your "My First Project" project from the dropdown to the right of the "Google Cloud Platform" worded logo - and ensure that the billing account you just created is enabled for that project (it should be named like "My Billing Account". <strong>If you selected "Got it", your first project might not have been created. To remedy this select the "Project" drop down and create a project titled "My First Project", then repeat this step to ensure you know how to associate a billing account with a project.</strong></li>
+<li>Now your CMU Cloud Computing GCP Account is ready for use!</li>
+</ol>
+
+<h2>(Danger) Upgrading to a paid account</h2>
+
+<p>While using the $300 Free Tier credits you may be subjected to certain restrictions in terms of resources your account can provision. For example, you can only provision a limited number of VMs and storage. </p>
+
+<p>If you need to use more resource quotas, GCP allows you to upgrade your account to a paid account <strong>at your own risk</strong>. </p>
+
+<p>On upgrading your account you will no longer be subjected to any restrictions as mentioned above. However, if your coupon expires or you exceed the credits, GCP <strong>WILL NOT WARN YOU</strong> and directly charge your credit card.</p>
+
+<p>We therefore strongly recommend you exercise caution if you decide to upgrade your account to a paid account. You can create budget alarms to monitor the spending and receive warning emails.</p>
+
+<h2>Grade Penalties on Excessive Use</h2>
+
+<p>You are solely responsible for the usage of your GCP account and should not exceed the financial limits of the coupons you are provided by course management - so be cautious!</p>
+
+<p>For more information about how to monitor your usage of GCP please review the features in <a href="https://console.cloud.google.com/billing">GCP Billing</a> from the console (make sure to select a billing account to view the left hand drawer) and your <a href="https://console.cloud.google.com/compute">quotas</a> found on the left hand menu drawer.</p>
+
+<p>As we encouraged you to create a new Google account specifically for this course, free trial should aid you for the first two months of the course.</p>
+
+<p>Usage reports will be monitored by the instructors and excessive use will be grounds for grade penalties.</p>
+
+<p>The GCP account that you have just created for the course should be used <strong>exclusively</strong> for the projects in this course.</p>
+
+<p>This account must not be used for any private work or for other courses/projects at CMU or elsewhere.</p>
+
+<h2>Dropping the Course</h2>
+
+<p>Your provided coupon's value will be void if you drop the course.</p>
+
+<p>Any resources that you have left running will be billed to the billing account you setup earlier in the primer, or substracted from your remaining free-trial allotment.</p>
+
+<p>Please ensure that you terminate all resources and <a href="https://support.google.com/accounts/answer/32046?hl=en">cancel your c4gcp account</a> if you do not plan to use GCP with this account in the future.</p>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+                <h4 class="modal-title" id="myModalTitle">
+                    &nbsp;Error
+                </h4>
+            </div>
+            <div class="modal-body" id="myModalBody">
+                You do not have the permissions to access this
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="row">
+    <input type="hidden" id="token" name="token" value="1ZMBwHFd52Q9OYVGy9mCryYfJzhqHKP211zNnFbnfxVvfk+S3Gd+K/PtbuBMSLxx6785PFI+NJGOoH+1HVqqkg==">
+    <input type="hidden" id="student_id" name="student_id" value="qiuchenz@andrew.cmu.edu">
+    <input type="hidden" id="service_name" name="service_name" value="TPZ">
+    <input type="hidden" id="phase_id" name="phase_id" value="1487">
+    <input type="hidden" id="course_id" name="course_id" value="92">
+    <input type="hidden" id="username-input" name="username" value="qiuchenz@andrew.cmu.edu">
+
+
+</div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+
+<script src="/static/website/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- Compiled and minified Typeahead JavaScript -->
+<script src="/static/website/js/bootstrap3-typeahead.js"></script>
+
+<!-- Compiled and minified Bloodhound JavaScript -->
+<script src="/static/website/js/bloodhound.min.js"></script>
+
+<!-- Compiled and minified MomentJS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js" integrity="sha384-ohw6o2vy/chIavW0iVsUoWaIPmAnF9VKjEMSusADB79PrE3CdeJhvR84BjcynjVl" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified DateTime Picker JavaScript -->
+<script src="/static/website/js/bootstrap-datetimepicker.js"></script>
+
+<!-- Compiled and minified DateTime Picker JavaScript -->
+<script src="/static/website/js/bootstrap-toggle.min.js"></script>
+
+<script src="/static/website/js/jasny-bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+<script type="application/javascript">
+
+// Resize iFrame to full height
+// Source: http://stackoverflow.com/questions/819416/adjust-width-height-of-iframe-to-fit-with-content-in-it
+function resizeIFrameToFitContent( iFrame ) {
+
+    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+}
+
+window.addEventListener('DOMContentReady', function(e) {
+    var iframes = document.querySelectorAll("iframe");
+    for( var i = 0; i < iframes.length; i++) {
+        resizeIFrameToFitContent( iframes[i] );
+    }
+} );
+
+</script>
+
+
+
+
+<!-- This is just so that AssessMes scroll as expected -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="/static/website/js/intersection-observer.js"></script>
+<script src="/static/website/js/writeupView.js?version=S17v1"></script>
+<script src="/static/website/js/assessme.js"></script>
+
+
+<script type="text/javascript">
+ $(function() {
+    new Clipboard('#snipper');
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91776154-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
+
+Process finished with exit code 0

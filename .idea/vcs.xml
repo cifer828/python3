@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Django_Projects/wotou/wotoucrawler" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Django_Projects/wotou/wotoudjango" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Django_Projects/wotou/wotouml" vcs="Git" />
   </component>
 </project>
