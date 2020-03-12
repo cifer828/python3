@@ -1,0 +1,83 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专利法详情页</title>
+    <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+</head>
+<body>
+    <div class="ui segment">
+        <h1 class="ui header text aligned center">窝头网OPS系统</h1>
+    </div>
+
+    <div class="ui segment">
+        <div class="ui container segment">
+            <div class="ui breadcrumb">
+                <a class="section" href="home">首页</a>
+                <div class="divider">/</div>
+                <a class="section">企业推荐</a>
+                <div class="divider">/</div>
+                <a class="section" href="zhuanlifa">专利法</a>
+                <div class="divider">/</div>
+                <div class="active section">Search for:
+                    <a href="#">长春华普生物有限公司</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui container  segment">
+            <div class="ui small icon button">
+                <button class="ui button">
+                    <i class="save icon"></i>
+                    保存为Excel
+                </button>
+            </div>
+            <div class="ui small icon button">
+                <button class="ui button">
+                    <i class="upload icon"></i>
+                    上传到服务器
+                </button>
+            </div>
+        </div>
+
+        <div class="ui container segment">
+        <table class="ui single line table">
+          <thead>
+            <tr>
+              <th>登记号</th>
+              <th>适应症</th>
+              <th>药物名称</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Lilki</td>
+              <td>September 14, 2013</td>
+              <td>jhlilk22@yahoo.com</td>
+            </tr>
+            <tr>
+              <td>Jamie Harington</td>
+              <td>January 11, 2014</td>
+              <td>jamieharingonton@yahoo.com</td>
+            </tr>
+            <tr>
+              <td>Jill Lewis</td>
+              <td>May 11, 2014</td>
+              <td>jilsewris22@yahoo.com</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div class="ui segment">
+        <div class="ui vertical container segment">
+            <button class="ui right labeled icon button very wide">
+                <i class="right arrow icon"></i>
+                Next
+            </button>
+        </div>
+    </div>
+</body>
+</html>

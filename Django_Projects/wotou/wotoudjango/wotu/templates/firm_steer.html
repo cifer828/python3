@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>临床批文企业推荐</title>
+    <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+</head>
+<body>
+    <div class="ui segment">
+        <h1 class="ui text aligned centered header">窝头网OPS系统</h1>
+    </div>
+ 
+    <div class="ui segment">
+        <div class="ui container segment">
+                  <a class="ui tag label" href="home" onmouseover="style.color='black'">首页</a>
+                  <a class="ui red tag label" onmouseover="style.color='purple'">企业推荐</a>
+                  <a class="ui teal tag label" href="firm_steer" onmouseover="style.color='blue'">临床批文公司推荐</a>
+                </div>
+         
+        </div>
+
+        <div class="ui container segment">
+            <p>上一次的推荐时间为：_年_月_日</p>
+            <button class="ui container button">
+                临床批文更新
+            </button>
+        </div>
+        <h4 class="ui horizontal container divider header"><i class="tag icon"></i> 详细内容 </h4>
+        <div class="ui container segment">
+            <table class="ui single line table">
+              <thead>
+                <tr>
+                  <th>登记号</th>
+                  <th>适应症</th>
+                  <th>药物名称</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Lilki</td>
+                  <td>September 14, 2013</td>
+                  <td>jhlilk22@yahoo.com</td>
+                </tr>
+                <tr>
+                  <td>Jamie Harington</td>
+                  <td>January 11, 2014</td>
+                  <td>jamieharingonton@yahoo.com</td>
+                </tr>
+                <tr>
+                  <td>Jill Lewis</td>
+                  <td>May 11, 2014</td>
+                  <td>jilsewris22@yahoo.com</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="ui segment">
+        <div class="ui vertical container segment">
+            <button class="ui button">保存</button>
+            <button class="ui button">下一步</button>
+        </div>
+    </div>
+</body>
+</html>

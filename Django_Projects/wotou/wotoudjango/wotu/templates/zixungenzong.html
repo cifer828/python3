@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>资讯跟踪</title>
+    {% load staticfiles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+        <link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.min.css" %}">
+		<link rel="stylesheet" href="{% static "css/form-elements.css" %}">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="{% static "css/semantic.css" %}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="{% static "ico/favicon.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "ico/apple-touch-icon-144-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "ico/apple-touch-icon-114-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "ico/apple-touch-icon-72-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static "ico/apple-touch-icon-57-precomposed.png" %}">
+</head>
+<body>
+    <div class="ui segment">
+        <h1 class="ui text aligned centered header">
+            窝头网OPS系统
+        </h1>
+    </div>
+    <div class="ui segment" >
+        <!-- <div class="path" style="float:left; padding: 30px"> -->
+        <a class="ui tag label" href="home" style="float: left" onmouseover="style.color='black'">首页</a >
+        <a class="ui red tag label" style="float:left" onmouseover="style.color='purple'">企业推荐</a>
+        <a class="ui teal tag label" style="float:left" href="zixungenzong" onmouseover="style.color='purple'">资讯跟踪</a >
+        <a class="ui blue tag label" onmouseover="style.color='purple'">查询／单个公司</a >
+    </div>
+	
+	<div class="ui segment">
+			<div class="panel-body" style="margin-top: 100px">
+				<form role="form" method="post" style="margin-left:20%;margin-right: 20%">
+					{% csrf_token %}
+					<div class="form-group"><!--
+								<h1 style="text-align: center">关键字查询</h1>
+								<label style="text-align: center">请输入关键字</label>-->
+						{{ form.keyword }}
+
+					</div>
+					<button type="submit" class="btn btn-default" style="position: center" href="for_track">OPS查询</button>
+				</form>
+
+			</div>
+		</div>
+		<div class="ui segment">
+			<div class="widget" style="padding-left: 20px;padding-right: 20px">
+				<div class="company" style="margin-top: 30px">
+                    <!--
+					<a>若查询企业仅1家，则</a>
+					<a class="name_company" style="margin-left: 20px">企业名称</a>-->
+                    <div class="table-overflow" style="margin-top: 20px">
+        				<table class="table table-striped table-bordered table-checks media-table" style="width:1000px;margin-left: 100px">
+           					<thead>
+
+                            {% if news_list %}
+                            {% for news in news_list %}
+           	 					<tr>
+                					<td align="center" valign="top" rowspan="4" style="width:80px">
+
+											<a class="top_nav" target="_self">资讯{{ news.4 }}</a>
+                					</td>
+
+									<th><a class="time">时间:</a>{{news.0}}</th>
+								</tr>
+
+
+								<tr>
+
+									<th>
+                						<a class="time">标题:</a>{{ news.1 }}
+                					</th>
+
+								</tr>
+
+								<tr>
+
+									<th>
+                						<a class="time">资讯:</a>{{ news.2 }}
+                					</th>
+								</tr>
+
+								<tr>
+
+									<th>
+                						<a class="time">链接:</a> <a href="{{ news.3 }}" target="_blank"> {{ news.3 }}</a>
+                					</th>
+								</tr>
+
+                            {% endfor %}
+            				</thead>
+        					</table>
+    					</div>
+                    {% else %}
+                                <p>没有获取到相应关键词的新闻列表!</p>
+                    {% endif %}
+    				<!--<div class="table-overflow" style="margin-top: 20px">
+        				<table class="table table-striped table-bordered table-checks media-table" style="width:1000px;margin-left: 100px">
+           					<thead>
+           	 					<tr>
+                					<td align="center" valign="top" rowspan="4" style="width:80px">
+											<a class="top_nav" target="_self">资讯1
+											</a>	
+                					</td>
+                						
+									<th><a class="time">时间</a>
+									</th>	
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">标题</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">资讯</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">链接</a>
+                					</th>
+								</tr>
+
+								<tr>
+                					<td align="center" valign="top" rowspan="4"style="width:40px">
+											<a class="top_nav" target="_self" >资讯2
+											</a>	
+                					</td>
+                						
+									<th><a class="time">时间</a>
+									</th>	
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">标题</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">资讯</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">链接</a>
+                					</th>
+								</tr>
+								
+								<tr>
+                					<td align="center" valign="top" rowspan="4" style="width:40px">
+											<a class="top_nav" target="_self">资讯3
+											</a>	
+                					</td>
+                						
+									<th><a class="time">时间</a>
+									</th>	
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">标题</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">资讯</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">链接</a>
+                					</th>
+								</tr>
+								
+								<tr>
+                					<td align="center" valign="top" rowspan="4" style="width:40px">
+											<a class="top_nav" target="_self" >资讯4 
+											</a>	
+                					</td>
+                						
+									<th><a class="time">时间</a>
+									</th>	
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">标题</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">资讯</a>
+                					</th>
+								</tr>
+								<tr>
+									
+									<th>
+                						<a class="time">链接</a>
+                					</th>
+								</tr>
+
+            				</thead>
+        					</table>
+    					</div>-->
+
+    					<!--<div><a class="ui blue label" href="#" style="margin-bottom: 20px">查看其他企业信息 接第三页</a></div>-->
+
+					</div>			
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</<html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>机构跟踪法</title>
+    {% load staticfiles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+        <link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.min.css" %}">
+		<link rel="stylesheet" href="{% static "css/form-elements.css" %}">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="{% static "css/semantic.css" %}">
+            <!-- MetisMenu CSS -->
+    	<link href="{% static "css/metisMenu.min.css" %}" rel="stylesheet">
+
+    	<!-- Custom CSS -->
+    	<link href="{% static "css/sb-admin-2.css" %}" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="{% static "ico/favicon.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "ico/apple-touch-icon-144-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "ico/apple-touch-icon-114-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "ico/apple-touch-icon-72-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static "ico/apple-touch-icon-57-precomposed.png" %}">
+</head>
+<body>
+	<div class="path">
+		<div class="row clearfix">
+			<div class="col-md-50 column">
+				<div class="panel panel-default" >
+					<p class = "ui segment" style="text-aligh:center">
+						<div class="panel-heading">
+							<div class="ui center aligned icon header" >
+  							<h1 class="content" style="margin-top:50px">窝头OPS系统</h1>
+							</div>
+							<div class="path" style="float:left; padding: 15px">
+								<a class="ui tag label" href="home" onmouseover="style.color='black'">首页</a>
+								<a class="ui red tag label" onmouseover="style.color='purple'">企业推荐</a>
+								<a class="ui teal tag label" href="track_asset.html" onmouseover="style.color='blue'">机构跟踪法</a>
+							</div>
+						</div>
+						<div class="panel-body" style="margin-top:100px">
+                            <p>搜索结果：</p><br />
+                            {% for manager, company in result.items %}
+                                <p>基金管理人：<span>{{ manager }}</span></p>
+                                    <table>
+                                        <tbody>
+                                            <tr><td>-------旗下所有企业--------</td></tr>
+                                            {% for all in company.all_companies %}
+                                                <tr><td>{{ all }}</td></tr>
+                                            {% endfor %}
+                                            <tr><td>  </td></tr>
+
+                                            <tr><td>--------符合条件企业--------</td></tr>
+                                            {% for wanted in company.wanted_companies %}
+                                                <tr><td>{{ wanted }}</td></tr>
+                                            {% endfor %}
+                                            <tr><td>  </td></tr>
+                                        </tbody>
+                                    </table>
+                            {% endfor %}
+                		</div>
+    				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

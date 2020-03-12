@@ -1,0 +1,8 @@
+*.pyc
+.DS_Store
+.idea/
+wotu/spiders/test.py
+wotu/spiders/test.py.bak
+wotu/spiders/test.fenci.py
+wotu/spiders/track_asset/test_for_crm_insert.py
+wotu/spiders/track_asset/test_for_filter.py
