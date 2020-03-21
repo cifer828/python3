@@ -17,6 +17,11 @@ from bs4 import BeautifulSoup
 
 
 def parse_cookie(cookie_str: str):
+    """
+    Convert cookie string to cookie dict
+    :param cookie_str: cookie string
+    :return: cookie dict
+    """
     cookie_list = [pair.strip().split("=") for pair in cookie_str.split(";")]
     cookie_dict = dict(cookie_list)
     return cookie_dict
@@ -131,17 +136,20 @@ class WriteupCrawler:
 if __name__ == "__main__":
     # 1. login to https://theproject.zone/s20-15619
     # 2. open more tools > developer tools
-    # 3. open network tab, relaod page
+    # 3. open network tab, reload page
     # 4. find the a html file named "s20-15619"
     # 5. copy cookie string from request header
+    # 6. specify local dir to download files
     cookie_string = "_ga=GA1.2.1613336051.1578938483; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; " \
                     "_gid=GA1.2.1431870624.1583964865; " \
                     "csrftoken=1GWDsfLnbO1ryzkwz38ri8DEooXCqzw9ZDJ8r17AgxiNGuW66CLHpgAU7alYbOV0; " \
                     "sessionid=uywljn3za2tb6tgtgcjlukbscefu0rlb; " \
                     "_shibsession_74686570726f6a6563742e7a6f6e6568747470733a2f2f74686570726f6a6563742e7a6f6e652f73686962626f6c657468=_600964f170c601aafaccb0d578ae71f2 "
     root = "/Users/qiuchenzhang/Documents/CMU/Notes/15619-writeup/"
+
     crawler = WriteupCrawler(root, cookie_string)
     crawler.download_projects()
+
     # crawler.download_single_project("https://theproject.zone/s20-15619/account-setup",
     #                                 "Primers",
     #                                 "Cloud account setup (Required)".replace(" ", "-"))
