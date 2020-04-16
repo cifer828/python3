@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Crawlers/ccCrawler/oli_image_replace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python3Projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python3Projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawlers/ccCrawler/project_zone_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawlers/ccCrawler/project_zone_crawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -358,6 +354,7 @@
       <workItem from="1584299551952" duration="24000" />
       <workItem from="1584326746939" duration="3000" />
       <workItem from="1584676015469" duration="837000" />
+      <workItem from="1585904652808" duration="2998000" />
     </task>
     <task id="LOCAL-00001" summary="django course">
       <created>1578018156814</created>
