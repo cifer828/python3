@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Academic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Academic/visual_detection/final/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Academic/visual_detection/gmm_tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Academic/visual_detection/final/gmm_tracking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawlers/ccCrawler/oli_image_replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawlers/ccCrawler/oli_image_replace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawlers/ccCrawler/project_zone_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawlers/ccCrawler/project_zone_crawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,19 +99,19 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Academic/visual_detection/final" />
+      <recent name="$PROJECT_DIR$/Crawlers/ccCrawler/15619-writeup/Primers/Amazon-Web-Services-Intro" />
+      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/templates" />
+      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static/css" />
+      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Crawlers/ccCrawler" />
       <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static" />
       <recent name="$PROJECT_DIR$/udemy_django/my_projects" />
       <recent name="$PROJECT_DIR$/OA" />
       <recent name="$PROJECT_DIR$/../python2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Crawlers/ccCrawler/15619-writeup/Primers/Amazon-Web-Services-Intro" />
-      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/templates" />
-      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static/css" />
-      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project/first_app/static" />
-      <recent name="$PROJECT_DIR$/udemy_django/my_projects/first_project" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -121,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.project_zone_crawler">
+  <component name="RunManager" selected="Python.oli_image_replace">
     <configuration name="Amazon-Web-Services-Intro.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3/Crawlers/ccCrawler/15619-writeup/Primers/Amazon-Web-Services-Intro/Amazon-Web-Services-Intro.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -298,8 +303,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.project_zone_crawler" />
         <item itemvalue="Python.oli_image_replace" />
+        <item itemvalue="Python.project_zone_crawler" />
         <item itemvalue="Python.oli_cralwer" />
         <item itemvalue="JavaScript Debug.project_zone.html" />
         <item itemvalue="JavaScript Debug.Amazon-Web-Services-Intro.html" />
@@ -355,6 +360,9 @@
       <workItem from="1584326746939" duration="3000" />
       <workItem from="1584676015469" duration="837000" />
       <workItem from="1585904652808" duration="2998000" />
+      <workItem from="1588372438769" duration="3179000" />
+      <workItem from="1588483644848" duration="717000" />
+      <workItem from="1589338891739" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="django course">
       <created>1578018156814</created>
@@ -415,12 +423,12 @@
     <SUITE FILE_PATH="coverage/python3$Part6_Exercise_Review.coverage" NAME="Part6_Exercise_Review Coverage Results" MODIFIED="1577905947988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/12-Python_Level_One" />
     <SUITE FILE_PATH="coverage/python3$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1578456972263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/python3$launch_instance.coverage" NAME="launch_instance Coverage Results" MODIFIED="1579385085271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AWS" />
-    <SUITE FILE_PATH="coverage/python3$project_zone_crawler.coverage" NAME="project_zone_crawler Coverage Results" MODIFIED="1584676335097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawlers/ccCrawler" />
+    <SUITE FILE_PATH="coverage/python3$project_zone_crawler.coverage" NAME="project_zone_crawler Coverage Results" MODIFIED="1588375694547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawlers/ccCrawler" />
     <SUITE FILE_PATH="coverage/python3$Part3_OOP_Project.coverage" NAME="Part3_OOP_Project Coverage Results" MODIFIED="1577921608703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/13-Python_Level_Two" />
     <SUITE FILE_PATH="coverage/python3$models.coverage" NAME="models Coverage Results" MODIFIED="1578454954560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework" />
     <SUITE FILE_PATH="coverage/python3$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1583120508456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
     <SUITE FILE_PATH="coverage/python3$akuna_order_markig.coverage" NAME="akuna_order_markig Coverage Results" MODIFIED="1576437847576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
     <SUITE FILE_PATH="coverage/python3$TEST.coverage" NAME="TEST Coverage Results" MODIFIED="1576437859612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
-    <SUITE FILE_PATH="coverage/python3$oli_image_replace.coverage" NAME="oli_image_replace Coverage Results" MODIFIED="1584676319278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawlers/ccCrawler" />
+    <SUITE FILE_PATH="coverage/python3$oli_image_replace.coverage" NAME="oli_image_replace Coverage Results" MODIFIED="1588483827921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawlers/ccCrawler" />
   </component>
 </project>

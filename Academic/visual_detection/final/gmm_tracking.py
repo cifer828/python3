@@ -516,7 +516,7 @@ class Post_process:
 
     def get_perspective(self):
         """
-        :return: real-world coodinate
+        :return: real-world coordinate
         """
         with open(self.img_coord_file, 'r') as f:
             real_points = f.read()

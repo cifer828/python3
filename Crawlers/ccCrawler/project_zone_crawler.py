@@ -45,9 +45,10 @@ class WriteupCrawler:
         }
         self.index_html = ""
 
-    def download_projects(self):
+    def download_projects(self, overwrite=False):
         """
         Parse the index page and download each project if it is unlocked
+        :param overwrite: overwrite old files or not
         """
         re = requests.get(self.base_url, headers=self.headers, cookies=self.cookies)
         index_html = re.content.decode("utf8")
@@ -55,10 +56,11 @@ class WriteupCrawler:
         panels = soup.select("body > div > div > div > div > div > div.panel-body > div.panel-default")
 
         # create root directory or remove it if exists then create a new one
-        if os.path.exists(self.root_dir):
+        if overwrite and os.path.exists(self.root_dir):
             print("Cleaning existing files...")
             shutil.rmtree(self.root_dir)
-        os.mkdir(self.root_dir)
+        if not os.path.exists(self.root_dir):
+            os.mkdir(self.root_dir)
 
         # traverse project group
         for panel in panels:
@@ -81,19 +83,27 @@ class WriteupCrawler:
                     project_name = td.get_text().strip().replace(" ", "-")
                     print("\n" + project_group + ": " + project_name + "is locked")
 
+        # remove account email
+        soup.select("#navbar > ul > li > button")[0].extract()
         # save index html file
         index_path = os.path.join(self.root_dir, "project_zone.html")
         with open(index_path, "w") as f:
             f.write(str(soup))
 
-    def download_single_project(self, project_url: str, project_group: str, project_name: str):
+    def download_single_project(self, project_url: str, project_group: str, project_name: str, overwrite=False):
         """
         Download html and image of single project page,
         Replace image link with local image
         :param project_group: project group, e.g. Primers, Project0
         :param project_name: project name also the name of directory and html
         :param project_url: url for the project page
+        :param overwrite: overwrite old files or not
         """
+        # check if file exists for not-overwrite mode
+        file_path = os.path.join(self.root_dir, project_group, project_name)
+        if not overwrite and os.path.exists(file_path):
+            print(file_path + " exists.")
+            return
         # parse the page
         print("\nParsing project: {}: {} from {}".format(project_group, project_name, project_url))
         re = requests.get(project_url, headers=self.headers, cookies=self.cookies)
@@ -101,7 +111,7 @@ class WriteupCrawler:
         soup = BeautifulSoup(html, "html5lib")
 
         # create local directory for this project
-        os.makedirs(os.path.join(self.root_dir, project_group, project_name))
+        os.makedirs(file_path)
 
         # download image and replace link on cloud with local link
         img_tag = soup.select("div.container-fluid")[0].find_all("img")
@@ -125,8 +135,11 @@ class WriteupCrawler:
         # fix return link to the index page
         home_page = soup.select("body > div:nth-child(1) > nav > div.navbar-header > span > a")[0]
         home_page["href"] = "../../project_zone.html"
+        # remove account email
+        soup.select("#navbar > ul > li > button")[0].extract()
         # save html
         html_path = os.path.join(self.root_dir, project_group, project_name, project_name + ".html")
+
         with open(html_path, "w") as f:
             f.write(str(soup))
 
@@ -140,12 +153,8 @@ if __name__ == "__main__":
     # 4. find the a html file named "s20-15619"
     # 5. copy cookie string from request header
     # 6. specify local dir to download files
-    cookie_string = "_ga=GA1.2.1613336051.1578938483; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; " \
-                    "_gid=GA1.2.1431870624.1583964865; " \
-                    "csrftoken=1GWDsfLnbO1ryzkwz38ri8DEooXCqzw9ZDJ8r17AgxiNGuW66CLHpgAU7alYbOV0; " \
-                    "sessionid=uywljn3za2tb6tgtgcjlukbscefu0rlb; " \
-                    "_shibsession_74686570726f6a6563742e7a6f6e6568747470733a2f2f74686570726f6a6563742e7a6f6e652f73686962626f6c657468=_600964f170c601aafaccb0d578ae71f2 "
-    root = "/Users/qiuchenzhang/Documents/CMU/Notes/15619-writeup/"
+    cookie_string = "_ga=GA1.2.1613336051.1578938483; SL_GWPT_Show_Hide_tmp=1; SL_wptGlobTipTmp=1; _gid=GA1.2.747882950.1587617528; csrftoken=oMqDSNOiqRYcEzb3Usj9uJjPkQuD2gtKNeJqn2CtG8NXT1Kf58Mwr9OmJmGWIyaA; sessionid=l1lbtk4s7qixecv6qukfcvq7ugb7sio7; _gat=1"
+    root = "/Users/qiuchenzhang/Documents/CMU/2020 Spring/15619 Cloud Computing/15619-writeup/"
 
     crawler = WriteupCrawler(root, cookie_string)
     crawler.download_projects()

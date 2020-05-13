@@ -62,7 +62,7 @@ def replace_image(md_path):
 
 
 if __name__ == "__main__":
-    root = "/Users/qiuchenzhang/Documents/CMU/Notes/15619-oli"
+    root = "/Users/qiuchenzhang/Documents/CMU/2020 Spring/15619 Cloud Computing/15619-oli"
     paths = get_markdown_path(root)
     for path in paths:
         replace_image(path)
