@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Academic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Academic/visual_detection/final/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demos/oath_token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Academic/visual_detection/gmm_tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Academic/visual_detection/final/gmm_tracking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawlers/ccCrawler/oli_image_replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawlers/ccCrawler/oli_image_replace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawlers/ccCrawler/project_zone_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawlers/ccCrawler/project_zone_crawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +80,7 @@
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Crawlers/ccCrawler" />
@@ -126,10 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.oli_image_replace">
-    <configuration name="Amazon-Web-Services-Intro.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3/Crawlers/ccCrawler/15619-writeup/Primers/Amazon-Web-Services-Intro/Amazon-Web-Services-Intro.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.oath_token">
     <configuration name="project_zone.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3/Crawlers/ccCrawler/15619-writeup/project_zone.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -147,6 +141,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oath_token" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python3Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/python35/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demos/oath_token.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,20 +310,20 @@
     <list>
       <item itemvalue="Django server.ProTwo" />
       <item itemvalue="Django server.first_project" />
-      <item itemvalue="JavaScript Debug.Amazon-Web-Services-Intro.html" />
       <item itemvalue="JavaScript Debug.project_zone.html" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.project_zone_crawler" />
       <item itemvalue="Python.oli_cralwer" />
       <item itemvalue="Python.oli_image_replace" />
+      <item itemvalue="Python.oath_token" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.oath_token" />
         <item itemvalue="Python.oli_image_replace" />
         <item itemvalue="Python.project_zone_crawler" />
         <item itemvalue="Python.oli_cralwer" />
         <item itemvalue="JavaScript Debug.project_zone.html" />
-        <item itemvalue="JavaScript Debug.Amazon-Web-Services-Intro.html" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +378,14 @@
       <workItem from="1585904652808" duration="2998000" />
       <workItem from="1588372438769" duration="3179000" />
       <workItem from="1588483644848" duration="717000" />
-      <workItem from="1589338891739" duration="1413000" />
+      <workItem from="1589338891739" duration="1933000" />
+      <workItem from="1592279595988" duration="4864000" />
+      <workItem from="1593379675058" duration="474000" />
+      <workItem from="1596840292492" duration="2000" />
+      <workItem from="1597713533913" duration="913000" />
+      <workItem from="1599705107231" duration="382000" />
+      <workItem from="1601771411837" duration="497000" />
+      <workItem from="1602177130204" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="django course">
       <created>1578018156814</created>
@@ -378,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578018277285</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="django course">
+      <created>1589340528143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589340528143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -426,6 +456,7 @@
     <SUITE FILE_PATH="coverage/python3$project_zone_crawler.coverage" NAME="project_zone_crawler Coverage Results" MODIFIED="1588375694547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawlers/ccCrawler" />
     <SUITE FILE_PATH="coverage/python3$Part3_OOP_Project.coverage" NAME="Part3_OOP_Project Coverage Results" MODIFIED="1577921608703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/13-Python_Level_Two" />
     <SUITE FILE_PATH="coverage/python3$models.coverage" NAME="models Coverage Results" MODIFIED="1578454954560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/udemy_django/my_projects/first_project/homework" />
+    <SUITE FILE_PATH="coverage/python3$oath_token.coverage" NAME="oath_token Coverage Results" MODIFIED="1597713943151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Demos" />
     <SUITE FILE_PATH="coverage/python3$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1583120508456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
     <SUITE FILE_PATH="coverage/python3$akuna_order_markig.coverage" NAME="akuna_order_markig Coverage Results" MODIFIED="1576437847576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
     <SUITE FILE_PATH="coverage/python3$TEST.coverage" NAME="TEST Coverage Results" MODIFIED="1576437859612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OA" />
