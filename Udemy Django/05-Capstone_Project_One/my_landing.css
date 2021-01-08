@@ -1,0 +1,29 @@
+body{
+    background: #011627;
+    border: 60px solid #2EC4B6;
+    border-top: 0px;
+    margin: 0px;
+    font-family: 'Montserrat';
+    color: white;
+    text-align: center;
+}
+h2{
+    margin-bottom: 5%;
+}
+p{
+    padding: 5% 20% 0% 20%;
+}
+
+input{
+    margin: 0px 0px 10px;
+    font-size: 1.5em;
+}
+
+#submit{
+    border-radius: 25px;
+    background: #FF9F1C;
+    height: 80px;
+    width: 150px;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}

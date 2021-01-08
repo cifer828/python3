@@ -1,0 +1,62 @@
+[INFO  - 2017-05-11T05:54:25.845Z] GhostDriver - Main - running on port 50876
+[INFO  - 2017-05-11T05:54:26.835Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1","webSecurityEnabled":true}
+[INFO  - 2017-05-11T05:54:26.835Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.customHeaders:  - {}
+[INFO  - 2017-05-11T05:54:26.835Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"}
+[INFO  - 2017-05-11T05:54:26.835Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4aabe1f0-360e-11e7-8573-4f17fc08c46c
+[ERROR - 2017-05-11T05:54:27.579Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:27.579Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:4)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:28.309Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1494482068266
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:28.846Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:28.846Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:4)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:29.089Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1494482069049
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:29.468Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:29.468Z] Session [4aabe1f0-360e-11e7-8573-4f17fc08c46c] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:4)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-11T05:54:29.739Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1494482069697
+
+  phantomjs://platform/console++.js:263 in error

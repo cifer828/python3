@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Demos/oath_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="55157105-7f50-4e25-9004-71530deaad83" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,6 +383,7 @@
       <workItem from="1599705107231" duration="382000" />
       <workItem from="1601771411837" duration="497000" />
       <workItem from="1602177130204" duration="37000" />
+      <workItem from="1607915313600" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="django course">
       <created>1578018156814</created>

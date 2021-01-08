@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en-us" /> 
+	<title>私募基金公示 - 中国证券投资基金业协会</title>
+    <link rel="stylesheet" href="../../common/css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="../../common/css/unit.css" type="text/css"/>
+    <link rel="stylesheet" href="../../common/css/grid.css" type="text/css"/>
+    <link rel="stylesheet" href="../../common/css/global.css" type="text/css"/>
+    <link rel="stylesheet" href="../../common/css/module.css" type="text/css"/>
+    <style type="text/css">
+    	.w150 {
+		    width: 150px;
+		}
+		.a1{
+			color: #173bf4;
+			/*font-size:1.1em;*/
+		}
+		
+		.bthClick{
+			background-color: #c3d7f3 !important;
+		}
+		
+		#fundlist_length {
+           margin-left: 10px;
+           margin-top: 6px;
+        }
+       #fundlist_length select {
+           width:70px;
+        }
+        
+        select {
+		  padding: 5px 5px;
+		}
+    </style>
+	<link rel="stylesheet" type="text/css" href="../../lib/dataTable/css/jquery.dataTables.css"/>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/dataTable/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/dataTable/js/ellipses.js"></script>
+	
+	<script type="text/javascript" language="javascript" src="../../lib/datepicker/WdatePicker.js"></script>
+	<script type="text/javascript" language="javascript" src="./js/fundlist.js"></script>
+	
+	<script type="text/javascript" language="javascript" src="../../common/js/infodisc.js"></script>
+	<script type="text/javascript" language="javascript" src="../../common/js/xdate.js"></script>
+	<!--[if lt IE 8]>  
+	<script type="text/javascript" language="javascript" src="../../common/js/json2.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery/plugins/artDialog4/skins/blue.css"/>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/artDialog4/artDialog.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/artDialog4/jquery.artDialog.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/artDialog4/plugins/iframeTools.js"></script>
+	
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/jquery-ui-1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery/plugins/jquery-ui-1.11.4/jquery-ui.css"/>
+</head>
+
+<body class="g-container">
+	
+	<div class="g-header clearfix">
+            <a href="/" class="logo pull-left"><img src="../../common/images/logo.png" alt="中国证券投资基金业协会"/></a>
+            <div class="info pull-right">
+		      <span id="IE67" style="display:none;"><span class="fontSpace">组织机构代码</span>：71783348<br/></span>
+			  <span id="otherBrowser"><span class="fontSpace">组织机构代</span>码：71783348<br/></span>
+		                社会团体法人登记证书：社证字第4951号
+            </div>
+        </div>
+     <div class="g-body">
+            <!-- 私募基金管理人公示 start -->
+            <div class="m-manager-list">
+                <h3 class="text-center font-xbig text-bold mb30">私募基金公示</h3>
+                <p class="mb15"><a href="#" class="text-danger ml15" onclick="openAMACInfo();"><<中国证券投资基金业协会提示>></a></p>
+                <div style="display:none;" id="tooggleAMACInfo">
+                
+                </div>
+
+                <!-- 查询条件区域 start -->
+                <div class="m-search-bar clearfix mb15">
+                    <!-- <a href="#" class="btn-map">按地图查询</a> -->
+                    <form action="" class="form-horizontal">
+                    	<input type="hidden" id="putOnRecordPhase" value=""/>
+		                <input type="hidden" id="managerType" value=""/>
+		                <input type="hidden" id="workingState" value=""/>
+                        <div class="control-group">
+                            <div class="control-label w150">关键字：</div>
+                            <div class="controls">
+                                <input type="text" id="keyword" class="input input-keyword watermark" value="请输入基金名称、私募基金管理人名称"
+                                onfocus="javascript:keywordOnFocus(this);" onblur="javascript:keywordOnBlur(this);"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label w150">基金备案阶段：</div>
+                            <div class="controls">
+                                <a href="javascript:;" name="putOnRecordPhase" onclick="choosePutOnRecordPhase(this);" class="btn-link mr10" value="暂行办法实施前成立的基金">暂行办法实施前成立的基金</a>
+                                <a href="javascript:;" name="putOnRecordPhase" onclick="choosePutOnRecordPhase(this);" class="btn-link mr10" value="暂行办法实施后成立的基金">暂行办法实施后成立的基金</a>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label w150">管理类型：</div>
+                            <div class="controls">
+                            	<a href="javascript:;" name="managerType" onclick="chooseManagerType(this);" class="btn-link mr10" value="受托管理">受托管理</a>
+                                <a href="javascript:;" name="managerType" onclick="chooseManagerType(this);" class="btn-link mr10" value="自我管理">自我管理</a>
+                                <a href="javascript:;" name="managerType" onclick="chooseManagerType(this);" class="btn-link mr10" value="顾问管理">顾问管理</a>                                
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label w150">运作状态：</div>
+                            <div class="controls">
+                            	<a href="javascript:;" name="workingState" onclick="chooseWorkingState(this);" class="btn-link mr10" value="正在运作">正在运作</a>
+                                <a href="javascript:;" name="workingState" onclick="chooseWorkingState(this);" class="btn-link mr10" value="延期清算">延期清算</a>
+                                <a href="javascript:;" name="workingState" onclick="chooseWorkingState(this);" class="btn-link mr10" value="提前清算">提前清算</a>
+                                <a href="javascript:;" name="workingState" onclick="chooseWorkingState(this);" class="btn-link mr10" value="正常清算">正常清算</a>
+                                <a href="javascript:;" name="workingState" onclick="chooseWorkingState(this);" class="btn-link mr10" value="非正常清算">非正常清算</a>
+                            </div>
+                        </div>
+                        <div class="control-group text-right">
+                            <input type="button" class="btn btn-primary" value="查询" onclick="reload();"/>
+                            <input type="button" class="btn btn-clear ml10 mr40" value="清空条件" onClick="clearCondition();"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- 查询条件区域 end -->
+                <!-- 说明 -->
+                <div class="m-pager">
+                    <span class="label-tips text-mult pull-left text-danger">说明：标&nbsp;*&nbsp;的基金目前存在未进行的季度更新</span>
+                    <br/>
+                </div> 
+
+                <!-- 数据表格 start -->
+                <table id="fundlist" class="table table-center">
+                    <thead>
+                        <tr>
+                        	<th width="10%">编号</th>
+							<th width="30%">基金名称</th>
+							<th width="30%">私募基金管理人名称</th>
+							<th width="15%">成立时间</th>
+							<th width="15%">备案时间</th>
+							<!-- <th width="10%">成立时间</th>
+							<th width="10%">备案时间</th>
+							<th width="10%">是否托管</th> -->
+                        </tr>
+                    </thead>
+                </table>
+                 
+            </div>
+            <!-- 私募基金管理人公示 end -->
+
+        </div>
+        <!-- body end -->
+		
+		<div align="center" id="dialog-title" title="中国证券投资基金业协会提示" style="display:none" class="g-body">
+	      <!-- 私募基金管理人公示 start -->
+	      <div class="m-manager-list">
+	          <!--  <p class="text-danger ml15">中国证券投资基金业协会提示：</p>-->
+	          <br/>
+	          <div id="noticeInfo">
+	          	  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私募基金管理人规模类、提示类公示信息均来源于中国证券投资基金业协会已登记私募基金管理人提供的信息，基金管理人已书面承诺所有填报信息真实、准确、完整，并承诺承担所有相关法律责任。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国证券投资基金业协会对私募基金登记备案信息不做实质性事前审查。公示信息不构成对私募基金管理人投资管理能力、持续合规情况的认可，不作为基金资产安全的保证。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;投资者进行私募基金投资时须谨慎判断和识别风险。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社会公众若发现私募基金管理人分类公示信息中存在任何虚假或不实内容，请将相关实名举报或投诉情况发送至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:tousu@amac.org.cn">tousu@amac.org.cn</a>，或邮寄至中国证券投资基金业协会（地址：<font class="a1">北京市西城区金融大街20号交通银行大厦B座9层，邮编100033，请标明“法律部收”</font>）。详见协会官网“投资者教育”栏目中“投诉须知”。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列入分类公示的私募基金管理人如对分类公示有异议，请发函至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:pf@amac.org.cn">pf@amac.org.cn</a>。</p>
+	         </div>
+	
+	          <div id="timeShow" style="font-size:20px;font-weight:800;color:#FF9900">5 S</div>
+	     </div>
+	                 
+	 </div>
+        <!-- footer start -->
+        <div class="g-footer" style="position:relative;">版权所有：中国证券投资基金业协会  京ICP备16045718号&nbsp;&nbsp;&nbsp;&nbsp;<span id="hitsCount"></span></div>   
+</body>
+</html>

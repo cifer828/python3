@@ -1,0 +1,61 @@
+{% extends "first_app/base.html" %}
+    {% block title_block %}
+    Relative
+    {% endblock %}
+    {% load staticfiles %}
+    {% load my_extras %}
+    {% block body_block %}
+        {# filter: #}
+        {# !!! Remember filter argument is space sensitive #}
+        <div class="jumbotron">
+            <h2>Template Tag Filter</h2>
+            <h4>Text Manipulation: Remove 'r' and 'a' from 'rua'</h4>
+            <h4>Result: {{ text | chain_filter:'r' | rua:'a'}}!</h4>
+            <h4>Number Manipulation: add 828 and 2</h4>
+            <h4>Result: {{ number | add:"2"}}</h4>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Use django tag to display lists</h2>
+            {% if access_records %}
+                <table>
+                    <thead>
+                        <th>Site Name</th>
+                        <th>Date Accessed</th>
+                    </thead>
+
+                    {% for acc in access_records %}
+                    <tr>
+                        <td>{{ acc.name }}</td>
+                        <td>{{ acc.date }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p>No Access Records Found</p>
+            {% endif %}
+        </div>
+
+        <div class="jumbotron">
+            {#  display static file  #}
+            <h2>Display static file</h2>
+            {{ insert_me }}
+            <img class="img-thumbnail img-fluid" src="{% static 'img/rua.jpg' %}" alt="">
+        </div>
+
+        <div class="jumbotron">
+            {#  relative url #}
+            <h2>Relative Url</h2>
+            <a href="{% url 'first_app:index' %}">admin</a>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Forms</h2>
+            <form method="post">
+                {{ form }}
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary" value="submit">
+            </form>
+        </div>
+
+    {% endblock %}

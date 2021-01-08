@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果1</title>
+    {% load staticfiles %}
+    <script src="{% static "jquery/jquery-3.1.1.min.js" %}"></script>
+    <link type="text/css" rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+    <link type="text/css" rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/semantic.css" %}">
+
+
+    <script type="text/javascript" src="{% static "js/plugins/charts/excanvas.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/charts/jquery.flot.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/charts/jquery.flot.resize.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/charts/jquery.sparkline.min.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.easytabs.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.collapsible.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.mousewheel.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/prettify.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.bootbox.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.colorpicker.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.timepicker.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.jgrowl.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.fancybox.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.fullcalendar.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/ui/jquery.elfinder.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/plugins/uploader/plupload.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/uploader/plupload.html4.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/uploader/plupload.html5.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/uploader/jquery.plupload.queue.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.uniform.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.autosize.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.inputlimiter.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.tagsinput.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.inputmask.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.select2.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.listbox.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.validation.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.validationEngine-en.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.form.wizard.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/plugins/forms/jquery.form.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/plugins/tables/jquery.dataTables.min.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/files/bootstrap.min.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/files/functions.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/charts/graph.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/charts/chart1.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/charts/chart2.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/charts/chart3.js" %}"></script>
+</head>
+<body>
+    <div style="margin:0 auto ">
+        <h1 style="text-align: center">窝头OPS系统</h1>
+    </div>
+    <div class="ui segment">
+        <a class="ui tag label" href="home" onmouseover="style.color='black'">首页</a>
+        <a class="ui red tag label" href="showresult" onmouseover="style.color='purple'">搜索结果</a>
+        <a class="ui teal tag label" onmouseover="style.color='blue'">长春华普科技有限公司</a>
+    </div>
+    
+
+
+<div class="container" style="padding:30px">
+<div class="widget" style="padding-left: 50px;padding-right: 50px">
+    <div class="table-overflow">
+        <table class="table table-striped table-bordered table-checks media-table" id="result_table">
+            <thead>
+            <tr>
+                <th align="center">企业基本信息</th>
+                <th align="center">专利信息</th>
+                <th align="center">知识产权</th>
+                <th align="center">医药信息</th>
+                <th align="center">资讯信息</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+    <script type="text/javascript">
+        var itemList = {{ project_list|safe }};
+        var items_num = {{ projects_num }};
+        var field_num = {{ field_num }};
+        $(document).ready(function ()
+        {
+            for(var i=0;i<items_num;i++)
+            {
+                var $tr = $('<tr></tr>');
+                for (var j=0;j<7;j++)
+                {
+                    var $td = $('<td>'+itemList[i][j]+'</td>');
+                    $tr.append($td);
+                }
+                $('#result_table').append($tr);
+            }
+
+        });
+    </script>
+</body>
+
+</html>

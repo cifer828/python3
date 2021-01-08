@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+    	<h2 class="ui center aligned icon header">
+			<i class="circular users icon inverted blue"></i>窝头OPS系统</h2>
+    </title>
+    {% load staticfiles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+        <link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.min.css" %}">
+		<link rel="stylesheet" href="{% static "css/form-elements.css" %}">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="{% static "css/semantic.css" %}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="{% static "ico/favicon.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "ico/apple-touch-icon-144-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "ico/apple-touch-icon-114-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "ico/apple-touch-icon-72-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static "ico/apple-touch-icon-57-precomposed.png" %}">
+        <style type="text/css">
+            body{margin:0;padding: 0;}
+            #left{width: 40%;height: 100%;background: :#ff0000;float: left;}
+            #right{width: 60%;height: 100%;float: left;}
+        </style>
+
+</head>
+<body>
+    <div class="path">
+        <div class="row clearfix">
+            <div class="col-md-50 column">
+                <div class="panel panel-default">
+                    <div id="left" class="datalist">
+                        <div class="description">
+                            <script type="text/javascript">
+                                document.write("<h1>数据列表 wechat</h1>");
+                                // var itemList = {{ project_list}};
+                                // var item_num = {{ item_num }};
+                                // $(document).ready(function ()
+                                // {
+                                //     for(var i=0;i<item_num;i++)
+                                //         {
+                                //             var $tr = $('<tr></tr>');
+                                //                 var $td = $('<td>'+itemList[i]+'</td>');
+                                //                 $tr.append($td);
+                                //             $('#result_table').append($tr);
+                                //         }
+
+                                // });
+                            </script>
+                        </div>
+                    </div>
+                    <div id="right" class="content">
+                        <div class="description">
+                            <script>
+                                document.write("<h1>图表</h1>");
+                                document.write("<h1>企业列表</h1>")
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</<html>
+
